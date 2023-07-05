@@ -69,6 +69,7 @@ section{
     display: flex;
     width: 300px;
     height: 60.88px;
+    margin-bottom: 5px;
 }
 .Counselor_Nav_Btn{
     cursor: pointer;
@@ -79,6 +80,9 @@ section{
     font-family: 'Pretendard-SemiBold';
     font-size: 15px;
 }
+.Counselor_Nav_Btn.active{
+    border-bottom: 2px solid #005aac;
+}
 .Counselor_Nav_Btn_N{
     position: relative;
     display: inline-block;
@@ -88,6 +92,10 @@ section{
     background-color: #dadada;
     justify-content: center;
     align-items: center;
+}
+.Counselor_Nav_Btn_N:active{
+    background-color: #CBEAFF;
+    color: #005aac;
 }
 .Counselor_List{
     width: 300px;
@@ -116,6 +124,9 @@ section{
     font-family: 'Pretendard-SemiBold';
     font-size: 15px;
 }
+.Booking_Nav_Btn.active{
+    border-bottom: 2px solid #005aac;
+}
 .Booking_Nav_Btn_N{
     position: relative;
     display: inline-block;
@@ -125,6 +136,10 @@ section{
     background-color: #dadada;
     justify-content: center;
     align-items: center;
+}
+.Booking_Nav_Btn_N:active{
+    background-color: #CBEAFF;
+    color: #005aac;
 }
 .Booking_List{
     display: flex;
@@ -196,24 +211,19 @@ section{
     text-align: center;
     justify-content: center;
 }
-.Article_Nav_Content_item_btn1{
+.Article_Nav_Content_item_btn{
     border: 0;
-    padding: 0 27px 0 0;
-    background-color: white;
-    color: #005aac;
-    cursor: pointer;
-    font-family: 'Pretendard-ExtraBold';
-    font-size: 16px;
-}
-.Article_Nav_Content_item_btn2{
-    border: 0;
-    padding: 0 27px 0 27px;
+    padding: 0 15px 0 15px;
     background-color: white;
     cursor: pointer;
     font-family: 'Pretendard-Medium';
     font-size: 16px;
 }
-
+.Article_Nav_Content_item_btn:active{
+    color: #005aac;
+    font-family: 'Pretendard-ExtraBold';
+    font-size: 16px;
+}
 .search {
     position: relative;
     width: 300px;
@@ -225,6 +235,9 @@ input {
     padding: 10px 12px;
     font-size: 14px;
 }  
+input:focus{
+    outline: none;
+}
 .search_img {
     position: absolute;
     width: 17px;
@@ -358,7 +371,7 @@ input {
 /* The Close Button */
 .Modal_Close{
     color: #aaa;
-    padding-left: 450px;
+    padding-left: 450px;  
     /* padding-bottom: 20px; */
     font-size: 28px;
     font-weight: bold;
@@ -407,10 +420,19 @@ input {
     font-family: 'Pretendard-Medium';
     font-size: 16px;
 }
+/* .text_booking{
+    position: absolute;
+    box-sizing: content-box;
+    display: flex;
+    justify-content: space-between;  
+} */
 label{
     font-family: 'Pretendard-Medium';
     font-size: 18px;
 }
+/* .textLengthWrap{
+    display: flex;
+} */
 .Modal_Content_Input_Txt2{
     background: white;
     width: 450px;
@@ -433,6 +455,7 @@ label{
     width: 350px;
 }
 .Modal_Content_Input_Cancel{
+    display: block;
     width: 125px;
     height: 45px;
     border: 1px solid gray;
