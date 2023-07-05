@@ -1,0 +1,476 @@
+@font-face {
+    font-weight: 300;
+    font-family: 'Pretendard-Light';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+}
+@font-face {
+    font-weight: 400;
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+}
+@font-face {
+    font-weight: 500;
+    font-family: 'Pretendard-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+}
+@font-face {
+    font-weight: 600;
+    font-family: 'Pretendard-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+}
+@font-face {
+    font-weight: 700;
+    font-family: 'Pretendard-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+}
+@font-face {
+    font-weight: 800;
+    font-family: 'Pretendard-ExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+}
+html {
+    margin:0;
+    padding:0;
+    font-size : 16px;
+    overflow: hidden;
+}
+* {
+    box-sizing: border-box;
+}
+body, main, div, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow-x: hidden;
+    overflow: hidden;
+}
+ol, ul,li {
+	list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin:0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+.PeopleWrap {
+    display:block;
+    height: 100%;
+    overflow-x: hidden;
+}
+.AnimalWrap {
+    display: none;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* 헤더스타일 */
+header {
+    position: fixed;
+    top:0; left:0; bottom: 0; right: 0;
+
+    margin:0;
+    padding:0 4rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 100;
+    height: 100px;
+
+    background-color: transparent;
+}
+/* 로고 */
+.Logo img {
+    margin-left: 0.7rem;
+    width: 6rem;
+    cursor: pointer;
+}
+/* 메뉴 */
+.Menu {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.Tools {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.Tools p {
+    font-size: 0.9rem;
+    margin-left: 1rem;
+    margin-right: 0.7rem;
+    font-family: 'Pretendard-SemiBold';
+
+    cursor: pointer;
+}
+.Tools div {
+    width: 1.9rem;
+    height: 1.9rem;
+    border-radius: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.Tools div:hover {
+    background-color: #E5EEF7;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+nav .MainMenu {
+    margin-left: 1.1rem;
+    padding: 0.3rem 0.7rem;
+
+    font-size: 1rem;
+    font-family: 'Pretendard-SemiBold';
+
+    border-radius: 11px;
+    background-color: transparent;
+
+    cursor: pointer;
+
+    transition: background-Color 0.2s ease-in-out;
+}
+nav .MainMenu:hover {
+    background-color: #E5EEF7;
+}
+nav .active {
+    margin-left: 1.1rem;
+    padding: 0.3rem 0.7rem;
+
+    font-size: 1rem;
+    font-family: 'Pretendard-SemiBold';
+
+    border-radius: 11px;
+    background-color: #E5EEF7;
+
+    cursor: pointer;
+}
+
+/*헤더구분선*/
+.hr1 {
+    max-width: 88rem;
+    border: 1.5px solid #005AAC;
+    margin-top: 110px;
+}
+
+/*main*/
+main {
+    display: block;
+    position: relative;
+    
+    background-color: white;
+
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.wrap {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 79.5%;
+}
+.FilterWrap {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 78rem;
+    height: 4.5rem;
+    margin-bottom: .4rem;
+}
+.FilterWrap .filter {
+    font-family: 'Pretendard-Medium';
+    color: black;
+    font-size: 0.9rem;
+}
+.FilterWrap .filter span {
+    padding: 0 1.5rem;
+
+    cursor: pointer;
+}
+.FilterWrap .filter .active {
+    color: #005AAC;
+    font-weight: bold;
+}
+.FilterWrap .ArticleSearch {
+    margin-right: 1.5rem;
+    padding-left: 0.2rem;
+
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 1.8rem;
+    border-bottom: 2px solid #005AAC;
+}
+.FilterWrap .ArticleSearch input {
+    padding-left: 0.5rem;
+    outline: none;
+    border: none;
+
+    font-size: 0.9rem;
+    font-family: 'Pretendard-Regular';
+    color: black;
+}
+.FilterWrap .ArticleSearch input::placeholder {
+    font-size: 0.9rem;
+    font-family: 'Pretendard-Regular';
+    color: #A0A0A0;
+}
+form {
+    display: flex;
+    justify-content: space-between;
+}
+.FilterWrap .ArticleSearch button {
+    padding-right: 0.6rem;
+    border:none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.FilterWrap .ArticleSearch button img{
+    width: 21px;
+    height: 21px;
+
+    transition: .25s ease-in-out;
+}
+
+/*글목록*/
+.ListWrap {
+    max-width: 62rem;
+    overflow: hidden;
+}
+.ListWrap hr {
+    border: 1px solid #DADADA;
+    margin:0;
+    margin-bottom: .5rem;
+}
+.ListWrap .Content {
+    width: 62rem;
+    height: 8rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: space-around;
+}
+.ListWrap .Content .contNum {
+    margin: .55rem 0;
+
+    font-family: 'Pretendard-Bold';
+    font-size: 1.025rem;
+    color:#005AAC;
+}
+.ListWrap .Content .contWrap {
+    cursor: pointer;
+}
+.ListWrap .Content .contWrap:hover .contTitle {
+    color:#005AAC;
+}
+.ListWrap .Content .contWrap:hover + .contImg, .contImg:hover {
+    transform: scale(1.025);
+}
+.ListWrap .Content .contWrap .contTitle {
+    margin: .55rem 0;
+    width: 40rem;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    font-family: 'Pretendard-Bold';
+    font-size: 1.1rem;
+    color: #000000;
+
+        transition: color 0.25s ease-in-out;
+}
+.ListWrap .Content .contWrap .contArticle {
+    margin: 0.8rem 0;
+    width: 42rem;
+    height: 2.4rem;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+    white-space: pre-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    font-family: 'Pretendard-Regular';
+    font-size: 1rem;
+    color: #717171;
+}
+.ListWrap .Content .contWrap .contReactWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.ListWrap .Content .contWrap .contReactWrap .React {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.ListWrap .Content .contWrap .contReactWrap .React img{
+    width:20px;
+    height: 20px;
+}
+.ListWrap .Content .contWrap .contReactWrap .React span{
+    font-family: 'Pretendard-Bold';
+    font-size: 0.9rem;
+    color: #005AAC;
+
+    margin-left: 0.15rem;
+    margin-right: 0.5rem;
+}
+.ListWrap .Content .contWrap .contReactWrap .Date{
+    margin: 0;
+    font-family: 'Pretendard-Regular';
+    font-size: 0.8rem;
+    color: #9F9F9F;
+}
+.contImg {
+    margin: .3rem 0;
+    width: 210px;
+    height: 110px;
+    border-radius: 10px;
+    
+    cursor: pointer;
+
+    transition: all .2s ease-in-out;
+}
+
+/*글쓰기버튼*/
+.writeBtn {
+    width: 85px;
+    height: 35px;
+
+    margin: .5rem 0;
+
+    background-color: #005AAC;
+    border-radius: 10px;
+    border: none;
+
+    font-family: 'Pretendard-Medium';
+    color:#ffffff;
+    font-size: .85rem;
+
+    position: relative;
+    left: 28.4rem;
+
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.writeBtn:hover {
+    background-color: rgba(0, 90, 173,0.9);
+}
+
+/*page넘버링*/
+.PageNum {
+    font-family: 'Pretendard-Regular';
+    font-size: 1rem;
+}
+.PageNum span {
+    color: #000000;
+
+    margin:0 0.25rem;
+
+    cursor: pointer;
+}
+.PageNum .active {
+    color:#005AAC;
+    font-weight: bold;
+}
+.PageNum button {
+    color: #dadada;
+    font-size: 1rem;
+    border:none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+/* 푸터 */
+footer {
+    margin:0;
+    padding: 0.2rem 1rem;
+    background-color: #dadada;
+}
+footer p {
+    font-size: 0.5rem;
+    color: #717171;
+    font-family: 'Pretendard-Regular';
+}
+footer .footerText {
+    float:left;
+}
+footer .footerMem {
+    text-align: right;
+}
+
+/*animal*/
+.AnimalWrap .Tools div:hover {
+    background-color: #E8F6ED;
+}
+.AnimalWrap nav .MainMenu:hover {
+    background-color: #E8F6ED;
+}
+.AnimalWrap .MainText span {
+    color: #18A247;
+}
+/*헤더구분선*/
+.AnimalWrap .hr1 {
+    border: 1.5px solid #18A247;
+}
+.AnimalWrap .FilterWrap .filter .active {
+    color: #18A247;
+}
+.AnimalWrap .FilterWrap .ArticleSearch {
+    border-bottom: 2px solid #18A247;
+}
+.AnimalWrap .ListWrap .Content .contNum {
+    color:#18A247;
+}
+.AnimalWrap .ListWrap .Content .contWrap:hover .contTitle {
+    color:#18A247;
+}
+.AnimalWrap .ListWrap .Content .contWrap .contReactWrap .React span{
+    color: #18A247;
+}
+.AnimalWrap .writeBtn {
+    background-color: #18A247;
+}
+.AnimalWrap .writeBtn:hover {
+    background-color: rgba(24, 162, 71,0.9);
+}
+.AnimalWrap .PageNum .active {
+    color:#18A247;
+}
