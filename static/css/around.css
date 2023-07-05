@@ -1,0 +1,151 @@
+@font-face {
+    font-weight: 300;
+    font-family: 'Pretendard-Light';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+}
+@font-face {
+    font-weight: 400;
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+}
+@font-face {
+    font-weight: 500;
+    font-family: 'Pretendard-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+}
+@font-face {
+    font-weight: 600;
+    font-family: 'Pretendard-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+}
+@font-face {
+    font-weight: 700;
+    font-family: 'Pretendard-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+}
+@font-face {
+    font-weight: 800;
+    font-family: 'Pretendard-ExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+}
+* {
+    box-sizing: border-box;
+}
+body, main, div, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+ol, ul,li {
+	list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin:0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+html {
+    margin:0;
+    padding:0;
+    font-size : 16px;
+}
+
+h2 {
+    color: #000;
+    font-size: 1rem;
+    font-family: 'Pretendard-Bold';
+    font-style: normal;
+    position: absolute;
+    font-size: 2rem;
+    top:6rem;
+    left: 5rem;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button {
+    padding: 10px 20px;
+    background-color: white;
+    color: white;
+    border: none;
+    border: 0.01rem solid #DADADA; 
+    margin-left: 0;
+    width: 8rem;
+    height: 4rem;
+    position: relative;
+    bottom: 9rem;
+    color: black;
+    font-family: 'Pretendard-Light';
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .button:hover {
+    background-color: #34B962;
+    color: white;
+  }
+  .selected {
+    background-color: #34B962;
+    color: white;
+  }
+  .product1 {
+        display: flex;
+        align-items: center; /* 세로 정렬을 위한 속성 */
+        flex-direction: column;
+        position: absolute;
+        top: 38%;
+        margin-bottom: 2rem;
+  }
+  .product2 {
+    display: flex;
+    align-items: center; /* 세로 정렬을 위한 속성 */
+    flex-direction: column;
+    position: absolute;
+    margin-left: 45rem;
+  }
+
+  .product3 {
+    display: flex;
+    align-items: center; /* 세로 정렬을 위한 속성 */
+    flex-direction: column;
+    position: absolute;
+    margin-right: 90rem;
+  }
+
+
+  img {
+    width: 15rem;
+    height: 15rem;
+    margin-bottom: 1rem;
+  }
+
+  .price {
+    font-size: 1.2rem;
+    text-decoration: line-through; /* 가격을 한 줄로 지우기 */
+    color: #DADADA;
+  }
+
+  .discount-price {
+    font-size: 1rem;
+    color: black;
+  }
+  h3 {
+    font-family: 'Pretendard-SemiBold';
+  }
+  h4 {
+    font-family: 'Pretendard-Regular';
+  }
+  .discount-price {
+    font-family: 'Pretendard-Light';
+  }

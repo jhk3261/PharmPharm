@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/around.css">
+    <script src="https://kit.fontawesome.com/32afc995e9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="title">
+    <h2>반려동물을 위한 건강식품 모아보기</h2>
+</div>
+
+
+<div class="button-container">
+    <button class="button" onclick="goToPage('./around.html')">구충제</button>
+    <button class="button" onclick="goToPage('./around2.html')">세정제</button>
+    <button class="button" onclick="goToPage('./around3.html')">항생제</button>
+    <button class="button" onclick="goToPage('./around4.html')">관절염치료제</button>
+    <button class="button selected">피부질환제</button>
+    <button class="button" onclick="goToPage('./around6.html')">기타</button>
+  </div>
+
+  <div class="product1"><a href="https://www.coupang.com/vp/products/1853422411?itemId=3150462741&vendorItemId=71138046560&q=%EB%8F%99%EB%AC%BC+%ED%94%BC%EB%B6%80%EC%A7%88%ED%99%98%EC%A0%9C&itemsCount=36&searchId=633cdac7f6b04598891a00379b53ef95&rank=13&isAddedCart=">
+    <img src="./product5-1.png" alt=""></a>
+    <h3>마데카스켈</h3>
+    <h4>피부연고</h4>
+    <del class="price">28,100원</del>
+    <span class="discount-price">24,000원</span>
+
+    <div class="product2"><a href="https://www.coupang.com/vp/products/7070265837?itemId=17555391156&vendorItemId=86124713194&q=%EB%8F%99%EB%AC%BC+%ED%94%BC%EB%B6%80%EC%A7%88%ED%99%98%EC%A0%9C&itemsCount=36&searchId=633cdac7f6b04598891a00379b53ef95&rank=16&isAddedCart=">
+        <img src="./product5-3.png" alt=""></a>
+        <h3>센텔라</h3>
+        <h4>피부연고</h4>
+        <del class="price">22,000원</del>
+        <span class="discount-price">20,000원</span>
+
+    <div class="product3"><a href="https://www.coupang.com/vp/products/5696364005?itemId=9512216793&vendorItemId=74410736943&q=%EB%8F%99%EB%AC%BC+%ED%94%BC%EB%B6%80%EC%A7%88%ED%99%98%EC%A0%9C&itemsCount=36&searchId=633cdac7f6b04598891a00379b53ef95&rank=6&isAddedCart=">
+        <img src="./product5-2.png" alt=""></a>
+        <h3>디페토</h3>
+        <h4>피부영양제</h4>
+        <del class="price">215,400원</del>
+        <span class="discount-price">75,900원</span>
+</div>
+
+
+
+
+  <script>
+    //  document.querySelector('.button').classList.add('selected');
+      // 페이지 전환 로직을 여기에 구현합니다.
+      // 예시로 window.location.href를 사용하여 URL을 변경합니다.
+    function goToPage(url) {
+    window.location.href = url;
+  }
+  </script>
+
+</body>
+</html>

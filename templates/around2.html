@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/around.css">
+    <script src="https://kit.fontawesome.com/32afc995e9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="title">
+    <h2>반려동물을 위한 건강식품 모아보기</h2>
+</div>
+
+<div class="button-container">
+    <button class="button" onclick="goToPage('./around.html')">구충제</button>
+    <button class="button selected">세정제</button>
+    <button class="button" onclick="goToPage('./around3.html')">항생제</button>
+    <button class="button" onclick="goToPage('./around4.html')">관절염치료제</button>
+    <button class="button" onclick="goToPage('./around5.html')">피부질환제</button>
+    <button class="button" onclick="goToPage('./around6.html')">기타</button>
+  </div>
+
+  <div class="product1"><a href="https://www.coupang.com/vp/products/5455538304?itemId=8337340900&vendorItemId=75625162316&q=%EB%A6%B4%EB%A6%AC%EB%B2%B3&itemsCount=36&searchId=5e7ec560ad984157877fed14a7c09567&rank=1&isAddedCart=">
+    <img src="./product2-1.png" alt=""></a>
+    <h3>릴리벳</h3>
+    <h4>살균소독제</h4>
+    <del class="price">10,000원</del>
+    <span class="discount-price">8900원</span>
+
+    <div class="product2"><a href="https://www.coupang.com/vp/products/207628580?itemId=614903830&vendorItemId=4613466510&q=%EB%8F%99%EB%AC%BC+%EC%82%B4%EA%B7%A0%EC%86%8C%EB%8F%85%EC%A0%9C&itemsCount=36&searchId=bcd39371156f475997ba68305b56e9f9&rank=10&isAddedCart=">
+        <img src="./product2-3.png" alt=""></a>
+        <h3>바이오클</h3>
+        <h4>펫 탈취제</h4>
+        <del class="price">30,000원</del>
+        <span class="discount-price">20,450원</span>
+
+    <div class="product3"><a href="https://www.coupang.com/vp/products/1085647175?itemId=7323151760&vendorItemId=74614403701&pickType=COU_PICK&q=%EC%A0%95%EA%B8%80%EB%AA%AC%EC%8A%A4%ED%84%B0+%EA%B5%AC%EA%B0%95%EC%B2%AD%EA%B2%B0%EC%A0%9C&itemsCount=36&searchId=a8b6f1ce5b564e22bb659ad83049388f&rank=1&isAddedCart=">
+        <img src="./product2-2.png" alt=""></a>
+        <h3>정글몬스터</h3>
+        <h4>구강 청결제</h4>
+        <del class="price">31,500원</del>
+        <span class="discount-price">29,570원</span>
+</div>
+
+
+
+
+  <script>
+    //  document.querySelector('.button').classList.add('selected');
+      // 페이지 전환 로직을 여기에 구현합니다.
+      // 예시로 window.location.href를 사용하여 URL을 변경합니다.
+    function goToPage(url) {
+    window.location.href = url;
+  }
+  </script>
+
+</body>
+</html>
