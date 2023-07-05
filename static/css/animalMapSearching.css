@@ -1,0 +1,465 @@
+body,
+html {
+    padding: 0;
+    margin: 5vw;
+    overflow: auto;
+    background-color: white;
+}
+button{
+    border: 0;
+    outline: 0;
+}
+p{
+    margin: 0;
+}
+
+.animalSearch{
+    border: 0.15vw solid #18A247;
+    text-align: center;
+    justify-content: center;
+    box-sizing: content-box;
+    border-radius: 15px 15px 0px 0px;
+    background-color: white;
+    position: fixed;
+    width: 30vw;
+    height: 18vh;
+    display: inline-block;
+    z-index: 10;
+}
+
+.searchQ{
+    color: #18A247;
+}
+
+.searchIn{
+    border: none;
+    border-bottom: 2px solid #18A247;
+}
+
+.animalBtn{
+    background-color: #18A247;
+    color: white;
+    width: 6vw;
+    height: 3.5vh;
+    border-radius: 10px 10px 0px 0px;
+    font-weight: bold;
+}
+.animalBtn:hover{
+    cursor: pointer;
+}
+
+
+/* ===========리스트============= */
+
+.searchList{
+    border: 0.15vw solid #18A247;
+    text-align: center;
+    justify-content: center;
+    box-sizing: content-box;
+    width: 30vw;
+    margin-top: 18vh;
+    display: inline-block;
+    z-index: 2;
+    position: relative;
+}
+
+/* ===========1번 리스트=========== */
+
+
+.firstResult{
+    border-bottom: 0.15vw solid #18A247;
+    background-color: #18A247;
+    position: relative;
+    height: 35vh;
+    /* padding: 1vw; */
+    width: 100%;
+}
+.resultNum1{
+    position: absolute;
+    left: 1vw;
+    top: 1vh;
+}
+.num1{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+.endOrNot1{
+    color: #FFD600;
+    font-size: 15px;
+}
+
+.pharm1{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    left: 5.5vw;
+    top: 2vh;
+}
+.pharm1:hover{
+    cursor: pointer;
+}
+.pharm1min{
+    color: grey;
+    position: absolute;
+    left: 16vw;
+    top: 2.7vh;
+}
+
+.review1{
+    color: white;
+    position: absolute;
+    right: 2vw;
+    top: 2.5vh;
+    font-size: 15px;
+}
+
+.title1{
+    color: white;
+    position: absolute;
+    top: 10vh;
+    left: 5.5vw;
+    font-size: 15px;
+}
+.content1{
+    color: white;
+    position: absolute;
+    top: 10vh;
+    left: 11vw;
+    font-size: 15px;
+    text-align: left;
+}
+
+
+.findBtn1{
+    right: 2vw;
+    position: absolute;
+    top: 30vh;
+    border-radius: 10px;
+    background-color: white;
+    padding: 7px 10px 7px 10px;
+    font-weight: bold;
+}
+.findBtn1:hover{
+    cursor: pointer;
+    background-color: rgb(134, 134, 134);
+    color: white;
+}
+
+/* ============광고 리스트========== */
+
+.adResult{
+    border-bottom: 0.15vw solid #18A247;
+    background-color: #C2EFD2;
+    position: relative;
+    height: 35vh;
+    /* padding: 1vw; */
+    width: 100%;
+}
+.resultNumAd{
+    position: absolute;
+    left: 1vw;
+    top: 1vh;
+}
+.numAd{
+    font-size: 10px;
+    font-weight: bold;
+    color: black;
+    background-color: #FFD600;
+    border-radius: 10px;
+}
+.endOrNotAd{
+    color: #FFD600;
+    font-size: 15px;
+}
+
+.pharmAd{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    left: 5.5vw;
+    top: 2vh;
+}
+.pharmAd:hover{
+    cursor: pointer;
+}
+
+.pharmAdMin{
+    color: grey;
+    position: absolute;
+    left: 15vw;
+    top: 2.7vh;
+}
+
+.reviewAd{
+    color: black;
+    position: absolute;
+    right: 2vw;
+    top: 2.5vh;
+    font-size: 15px;
+}
+
+.titleAd{
+    color: black;
+    position: absolute;
+    top: 10vh;
+    left: 5.5vw;
+    font-size: 15px;
+}
+.contentAd{
+    color: black;
+    position: absolute;
+    top: 10vh;
+    left: 11vw;
+    font-size: 15px;
+    text-align: left;
+}
+
+
+.findBtnAd{
+    right: 2vw;
+    position: absolute;
+    top: 30vh;
+    border-radius: 10px;
+    background-color: #18A247;
+    padding: 7px 10px 7px 10px;
+    font-weight: bold;
+    color: white;
+}
+.findBtnAd:hover{
+    cursor: pointer;
+    background-color: rgb(134, 134, 134);
+    color: white;
+}
+
+/* ===========2번 리스트========== */
+
+
+
+.secondResult{
+    border-bottom: 0.15vw solid #18A247;
+    background-color: white;
+    position: relative;
+    height: 35vh;
+    /* padding: 1vw; */
+    width: 100%;
+}
+.resultNum2{
+    position: absolute;
+    left: 1vw;
+    top: 1vh;
+}
+.num2{
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+.endOrNot2{
+    color: #FFD600;
+    font-size: 15px;
+}
+
+.pharm2{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    left: 5.5vw;
+    top: 2vh;
+}
+.pharm2:hover{
+    cursor: pointer;
+}
+
+.pharm2Min{
+    color: grey;
+    position: absolute;
+    left: 15vw;
+    top: 2.7vh;
+}
+
+.review2{
+    color: black;
+    position: absolute;
+    right: 2vw;
+    top: 2.5vh;
+    font-size: 15px;
+}
+
+.title2{
+    color: black;
+    position: absolute;
+    top: 10vh;
+    left: 5.5vw;
+    font-size: 15px;
+}
+.content2{
+    color: black;
+    position: absolute;
+    top: 10vh;
+    left: 11vw;
+    font-size: 15px;
+    text-align: left;
+}
+
+
+.findBtn2{
+    right: 2vw;
+    position: absolute;
+    top: 30vh;
+    border-radius: 10px;
+    background-color: #18A247;
+    padding: 7px 10px 7px 10px;
+    font-weight: bold;
+    color: white;
+}
+.findBtn2:hover{
+    cursor: pointer;
+    background-color: rgb(134, 134, 134);
+    color: white;
+}
+
+
+/* =========3번 리스트========== */
+
+
+
+.thirdResult{
+    border-bottom: 0.15vw solid #18A247;
+    background-color: white;
+    position: relative;
+    height: 35vh;
+    /* padding: 1vw; */
+    width: 100%;
+}
+.resultNum3{
+    position: absolute;
+    left: 1vw;
+    top: 1vh;
+}
+.num3{
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+.endOrNot3{
+    color: #FFD600;
+    font-size: 15px;
+}
+
+.pharm3{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    left: 5.5vw;
+    top: 2vh;
+}
+.pharm3:hover{
+    cursor: pointer;
+}
+
+.pharm3Min{
+    color: grey;
+    position: absolute;
+    left: 15vw;
+    top: 2.7vh;
+}
+
+.review3{
+    color: black;
+    position: absolute;
+    right: 2vw;
+    top: 2.5vh;
+    font-size: 15px;
+}
+
+.title3{
+    color: black;
+    position: absolute;
+    top: 10vh;
+    left: 5.5vw;
+    font-size: 15px;
+}
+.content3{
+    color: black;
+    position: absolute;
+    top: 10vh;
+    left: 11vw;
+    font-size: 15px;
+    text-align: left;
+}
+
+
+.findBtn3{
+    right: 2vw;
+    position: absolute;
+    top: 30vh;
+    border-radius: 10px;
+    background-color: #18A247;
+    padding: 7px 10px 7px 10px;
+    font-weight: bold;
+    color: white;
+}
+.findBtn3:hover{
+    cursor: pointer;
+    background-color: rgb(134, 134, 134);
+    color: white;
+}
+
+
+/* =========map=========== */
+
+.mapBox{
+    border: 2px solid #18A247;
+    background-color: none;
+    border-left: none;
+    position: fixed;
+    right: 10vw;
+    top: 10vw;
+    width: 49vw;
+    height: 81vh;
+    z-index: 1;
+}
+
+/* ===========HA======== */
+.pageChangeBtn{
+    position: fixed;
+    right: 0;
+    top: 35vh;
+    border-radius: 10px 0px 0px 10px;
+    background-color: rgb(199, 199, 199);
+    width: 1.8vw;
+}
+.human{
+    background-color: rgb(199, 199, 199);
+    color: white;
+    height: 3.3vw;
+    border-radius: 10px 0px 0px 10px;
+    width: 1.8vw;
+    font-weight: bold;
+}
+.human:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+.animal{
+    background-color: #18A247;
+    color: white;
+    height: 3vw;
+    border-radius: 10px 0px 0px 10px;
+    width: 1.8vw;
+    font-weight: bold;
+}
+.animal:hover{
+    cursor: pointer;
+}
+
+.pageChangeBtn:hover .human{
+    background-color: white;
+    color: black;
+}
