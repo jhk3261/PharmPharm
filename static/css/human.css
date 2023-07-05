@@ -1,0 +1,238 @@
+*{
+    box-sizing: content-box;
+}
+@font-face {
+    font-weight: 300;
+    font-family: 'Pretendard-Light';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+}
+@font-face {
+    font-weight: 400;
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+}
+@font-face {
+    font-weight: 500;
+    font-family: 'Pretendard-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+}
+@font-face {
+    font-weight: 600;
+    font-family: 'Pretendard-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+}
+@font-face {
+    font-weight: 700;
+    font-family: 'Pretendard-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+}
+@font-face {
+    font-weight: 800;
+    font-family: 'Pretendard-ExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+}
+* {
+    box-sizing: border-box;
+}
+body, main, div, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+ol, ul,li {
+	list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin:0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.line {
+    position: relative;
+    width: 110rem;
+    left: 2rem;
+    border: 0.02rem solid blue;
+    top: 6rem;
+}
+.text {
+    position: fixed;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 2rem;
+    left: 6rem;
+    top: 12rem;
+}
+
+.box1 {
+    position: absolute;
+    top: 20rem;
+    left: 10rem;
+    width: 20rem;
+    height: 13.5rem;
+    border-radius: 2rem;
+    background-color: #CBEAFF;
+}
+
+.text1 {
+    position: relative;
+    top: 28rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    left: 18rem;
+}
+
+.box2 {
+    position: fixed;
+    top: 20rem;
+    left: 35rem;
+    width: 20rem;
+    height: 13.5rem;
+    border-radius: 2rem;
+    background-color: #005AAC;
+}
+
+.text2 {
+    position: absolute;
+    top: 29rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 40.5rem;
+    text-align: center;
+    
+}
+.box3 {
+    position: fixed;
+    top: 20rem;
+    left: 60rem;
+    width: 20rem;
+    height: 13.5rem;
+    border-radius: 2rem;
+    background-color: #CBEAFF;
+}
+
+.text3 {
+    position: absolute;
+    top: 29rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 65rem;
+    text-align: center;   
+}
+.box4 {
+    position: fixed;
+    top: 20rem;
+    left: 85rem;
+    width: 20rem;
+    height: 13.5rem;
+    border-radius: 2rem;
+    background-color: #CBEAFF;
+}
+
+.text4 {
+    position: absolute;
+    top: 29rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 90rem;
+    text-align: center;   
+}
+
+.box5 {
+    position: absolute;
+    top: 38rem;
+    left: 10rem;
+    width: 20rem;
+    height: 13.5rem;
+    border-radius: 2rem;
+    background-color: #CBEAFF;
+}
+
+.text5 {
+    position: relative;
+    top: 43rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    left: 18rem;
+}
+.box6 {
+    position: fixed;
+    top: 38rem;
+    left: 35rem;
+    width: 20rem;
+    height: 13.5rem;
+    border-radius: 2rem;
+    background-color: #CBEAFF;
+}
+
+.text6 {
+    position: absolute;
+    top: 47.3rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 40.5rem;
+    text-align: center; 
+}
+.box7 {
+    position: fixed;
+    top: 38rem;
+    left: 60rem;
+    width: 20rem;
+    height: 13.5rem;
+    border-radius: 2rem;
+    background-color: #CBEAFF;
+}
+
+.text7 {
+    position: absolute;
+    top: 47.3rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 67.5rem;
+    text-align: center;   
+}
+.box8 {
+    position: fixed;
+    top: 38rem;
+    left: 85rem;
+    width: 20rem;
+    height: 13.5rem;
+    border-radius: 2rem;
+    background-color: #CBEAFF;
+}
+
+.text8 {
+    position: absolute;
+    top: 47.3rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 91.5rem;
+    text-align: center;   
+}
+
+.sideBox {
+    position: relative;
+}
+.H {
+    position: relative;
+    width: 2rem;
+    height: 3rem;
+    background-color: #005AAC;
+    border-radius:0.8rem;
+    left: 114rem;
+    font-weight: bold;
+    text-align:center;
+    z-index: 1;
+}
+.A {
+    position: relative;
+    width: 2rem;
+    height: 3rem;
+    background-color: #DADADA;
+    border-radius:0.8rem;
+    left: 114rem;
+    font-weight: bold;
+    text-align:center;
+    bottom: 1.1rem;
+}
