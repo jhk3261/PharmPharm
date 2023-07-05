@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/around.css">
+    <script src="https://kit.fontawesome.com/32afc995e9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="title">
+    <h2>반려동물을 위한 건강식품 모아보기</h2>
+</div>
+    
+<div class="button-container">
+    <button class="button selected">구충제</button>
+    <button class="button" onclick="goToPage('./around2.html')">세정제</button>
+    <button class="button" onclick="goToPage('./around3.html')">항생제</button>
+    <button class="button" onclick="goToPage('./around4.html')">관절염치료제</button>
+    <button class="button" onclick="goToPage('./around5.html')">피부질환제</button>
+    <button class="button" onclick="goToPage('./around6.html')">기타</button>
+  </div>
+
+  <div class="product1"><a href="https://smartstore.naver.com/elanco_my-pet-and-i/products/4826673293">
+    <img src="./product1-1.png" alt=""></a>
+    <h3>세레스토</h3>
+    <h4>구충 예방 목걸이</h4>
+    <del class="price">65,000원</del>
+    <span class="discount-price">58,500원</span>
+
+    <div class="product2"><a href="https://www.coupang.com/vp/products/7048002328?itemId=17446069391&vendorItemId=74838471336&sourceType=srp_product_ads&clickEventId=7ed578fc-361e-419c-939c-571d1e0524a0&korePlacement=15&koreSubPlacement=1&q=%EB%8B%A5%ED%84%B0%EB%B0%94%EC%9D%B4+%EA%B5%AC%EA%B0%95%EC%BC%80%EC%96%B4&itemsCount=36&searchId=525b7a13c78240eba525cb7e0dd4ef6b&rank=0&isAddedCart=">
+        <img src="./product1-2.png" alt=""></a>
+        <h3>닥터바이 구강케어</h3>
+        <h4>구강 세균 치료</h4>
+        <del class="price">119,700원</del>
+        <span class="discount-price">80,700원</span>
+
+    <div class="product3"><a href="https://www.coupang.com/vp/products/6060368381?itemId=11022497746&vendorItemId=78302138911&sourceType=srp_product_ads&clickEventId=7ebc0ac3-0bfd-4f8e-97f2-6a9c8f4cf5a9&korePlacement=15&koreSubPlacement=5&q=%EB%B0%98%EB%A0%A4%EB%8F%99%EB%AC%BC+%EA%B5%AC%EC%B6%A9%EC%A0%9C&itemsCount=17&searchId=9c1c2af4e76949a3bceae3e780e1bab7&rank=4&isAddedCart=">
+        <img src="./product1-3.png" alt=""></a>
+        <h3>닥터바이 브레스</h3>
+        <h4>호흡기 영양제</h4>
+        <del class="price">79,800원</del>
+        <span class="discount-price">55,800원</span>
+</div>
+
+
+
+
+  <script>
+    //  document.querySelector('.button').classList.add('selected');
+      // 예시로 window.location.href를 사용하여 URL을 변경합니다.
+    function goToPage(url) {
+    window.location.href = url;
+  }
+  </script>
+
+</body>
+</html>
