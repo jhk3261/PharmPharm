@@ -1,0 +1,269 @@
+@font-face {
+    font-weight: 300;
+    font-family: 'Pretendard-Light';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+}
+@font-face {
+    font-weight: 400;
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+}
+@font-face {
+    font-weight: 500;
+    font-family: 'Pretendard-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+}
+@font-face {
+    font-weight: 600;
+    font-family: 'Pretendard-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+}
+@font-face {
+    font-weight: 700;
+    font-family: 'Pretendard-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+}
+@font-face {
+    font-weight: 800;
+    font-family: 'Pretendard-ExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+}
+* {
+    box-sizing: border-box;
+}
+body, main, div, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+ol, ul,li {
+	list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin:0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+html {
+    margin:0;
+    padding:0;
+    font-size : 16px;
+}
+
+button{
+
+    background: inherit ; border:none; box-shadow:none; border-radius:0; padding:0; overflow:visible; cursor:pointer}
+
+/* 인풋 태그 초기화 */
+
+/* input 기본 스타일 초기화 */
+input {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
+/* IE10 이상에서 input box 에 추가된 지우기 버튼 제거 */
+input::-ms-clear { display: none; }
+
+/* input type number 에서 화살표 제거 */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
+/* Select box 스타일 초기화 */ 
+select {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
+/* IE 에서 Select box 화살표 제거 */ 
+select::-ms-expand { display: none; }
+
+/* 여기서부터 직접 짠 코드 시작 */
+
+.wrap_all{
+    display: grid;
+    grid-template-columns: 14fr 72fr 14fr;
+
+}
+
+.title{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-family: 'Pretendard-Bold';
+    font-size: 36px;
+}
+
+.info{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    flex-direction: column;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.profile{
+    font-family: 'Pretendard-SemiBold';
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    
+}
+
+.profile_img{
+    border-width: 0.2rem;
+    border-style: solid;
+    border-color: #FFD600;
+    border-radius: 50%;
+
+    object-fit: cover;
+    width: 2rem;
+    height: 2rem;
+}
+
+.info_data{
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Pretendard-Light';
+    color: #717171;
+}
+
+span{
+    padding: 0 0.2rem;
+}
+
+.cnum{
+    font-family: 'Pretendard-Bold';
+    color: #005AAC;
+}
+
+.line{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 72fr;
+}
+
+.main_text{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-family: 'Pretendard-Regular';
+}
+
+.inside_img{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.ad_img{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.info_data_mini{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+}
+
+.white_space{
+    width: 1rem;
+    height: auto;
+}
+
+.put_comment{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    position: relative;
+}
+
+.profile_img_comment{
+    border-color: #CBEAFF;
+}
+
+input {
+    all: unset;
+}
+
+.comment_box{
+    vertical-align: top;
+    font-family: 'Pretendard-Light';
+    font-size: 18px;
+
+}
+
+.input_comment{
+    resize: none;
+    position: absolute;
+    left: 2rem;
+    width: 872px; 
+    height: 75px;
+    border-width: 0.1rem;
+    border-color: #005AAC;
+    border-radius: 0.7rem;
+    border-style: solid;
+    outline-color:#005AAC;
+    vertical-align: top;
+    text-align: left;
+    line-height: 1rem;
+    overflow: hidden;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+textarea::placeholder{
+    padding: 0.5rem;
+}
+
+.comment_button{
+    position: absolute;
+    right: 0;
+    top: 7.5rem;
+    width: 5rem;
+    height: 2rem;
+    background-color:#005AAC;
+    border-width: 0.1rem;
+    border-color: #005AAC;
+    border-radius: 0.7rem;
+    border-style: solid;
+    font-family: 'Pretendard-Medium';
+    font-size: 20px;
+    color: white;
+
+
+}
+
+.white_space2{
+    height: 8.688rem;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.align_profile{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    position: relative;
+}
+
+.comment_value{
+    position: absolute;
+    left: 2rem;
+    width: auto;
+}
+
+.align_profile > .white_space3{
+    width: var(--width);
+    
+}
+
+
