@@ -1,0 +1,314 @@
+*{
+    box-sizing: content-box;
+}
+@font-face {
+    font-weight: 300;
+    font-family: 'Pretendard-Light';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+}
+@font-face {
+    font-weight: 400;
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+}
+@font-face {
+    font-weight: 500;
+    font-family: 'Pretendard-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+}
+@font-face {
+    font-weight: 600;
+    font-family: 'Pretendard-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+}
+@font-face {
+    font-weight: 700;
+    font-family: 'Pretendard-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+}
+@font-face {
+    font-weight: 800;
+    font-family: 'Pretendard-ExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+}
+* {
+    box-sizing: border-box;
+}
+body, main, div, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+ol, ul,li {
+	list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin:0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.hr1 {
+    max-width: 88rem;
+    border: 1.5px solid #18a247;
+    margin-top: 5.5rem;
+}
+.normal {
+    position: relative;
+    font-family: 'Pretendard-Regular';
+    top: 8.8rem;
+    left: 11rem;
+    font-size: 1.1rem;
+}
+.special{
+    position: relative;
+    font-family: 'Pretendard-Regular';
+    top: 21.5rem;
+    left: 11rem;
+    font-size: 1.1rem;
+}
+.hr {
+    max-width: 88rem;
+    border: 1.5px solid #dadada;
+    top: 164px;
+}
+.hr2{
+    position: relative;
+    top: 18.5rem;
+    max-width: 75.5rem;
+    left: 1.9rem;
+}
+.text {
+    position: fixed;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 2rem;
+    left: 6rem;
+    top: 11rem;
+    font-family: 'Pretendard-Regular';
+}
+.image1{
+    width: 6rem ;
+    height: 6rem;
+    position: relative;
+    top: 1.5rem;
+    left: 14.1rem;
+}
+.image2{
+    width: 6rem ;
+    height: 6rem;
+    position: relative;
+    top: 1rem;
+    left: 29.5rem;
+}
+.image3{
+    width: 6rem ;
+    height: 6rem;
+    position: relative;
+    top: 1rem;
+    left: 42.9rem;
+}
+.image4{
+    width: 6rem ;
+    height: 6rem;
+    position: relative;
+    top: 1rem;
+    left: 56rem;
+    z-index: 1;
+}.image5{
+    width: 6rem ;
+    height: 6rem;
+    position: relative;
+    top: 16rem;
+    right:10.3rem;
+}.image6{
+    width: 6rem ;
+    height: 6rem;
+    position: relative;
+    top: 16rem;
+    left: 3rem;
+}.image7{
+    width: 6rem ;
+    height: 6rem;
+    position: relative;
+    top: 16rem;
+    left: 17rem;
+}.image8{
+    width: 6rem ;
+    height: 6rem;
+    position: relative;
+    top: 16.5rem;
+    left: 30.5rem;
+}
+.box1 {
+    position: absolute;
+    top: 16rem;
+    left: 10rem;
+    width: 16rem;
+    height: 12rem;
+    border-radius: 2rem;
+    background-color: #c2efd2;
+}
+
+.text1 {
+    position: relative;
+    top: 13.2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    left: 16.5rem;
+    font-family: 'Pretendard-Regular';
+}
+
+.box2 {
+    position: fixed;
+    top: 16rem;
+    left: 30rem;
+    width: 16rem;
+    height: 12rem;
+    border-radius: 2rem;
+    background-color: #c2efd2;
+}
+
+.text2 {
+    position: absolute;
+    top: 24.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    left: 34.6rem;
+    font-family: 'Pretendard-Regular';
+}
+.box3 {
+    position: fixed;
+    top: 16rem;
+    left: 50rem;
+    width: 16rem;
+    height: 12rem;
+    border-radius: 2rem;
+    background-color: #18a247;
+}
+
+.text3 {
+    position: absolute;
+    top: 24.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    left: 54.6rem; 
+    font-family: 'Pretendard-Regular';
+}
+.box4 {
+    position: fixed;
+    top: 16rem;
+    left: 70rem;
+    width: 16rem;
+    height: 12rem;
+    border-radius: 2rem;
+    background-color: #c2efd2;
+}
+
+.text4 {
+    position: absolute;
+    top: 24.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    left: 76.3rem;
+    font-family: 'Pretendard-Regular';
+}
+
+.box5 {
+    position: absolute;
+    top: 31rem;
+    left: 10rem;
+    width: 16rem;
+    height: 12rem;
+    border-radius: 2rem;
+    background-color: #c2efd2;
+}
+
+.text5 {
+    position: relative;
+    top: 25.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    left: 15.6rem;
+    font-family: 'Pretendard-Regular';
+}
+.box6 {
+    position: fixed;
+    top: 31rem;
+    left: 30rem;
+    width: 16rem;
+    height: 12rem;
+    border-radius: 2rem;
+    background-color: #c2efd2;
+}
+
+.text6 {
+    position: absolute;
+    top: 39.9rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    left: 36.5rem;
+    font-family: 'Pretendard-Regular';
+}
+.box7 {
+    position: fixed;
+    top: 31rem;
+    left: 50rem;
+    width: 16rem;
+    height: 12rem;
+    border-radius: 2rem;
+    background-color: #c2efd2;
+}
+
+.text7 {
+    position: absolute;
+    top: 39.8rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    left: 56.5rem;  
+    font-family: 'Pretendard-Regular';
+}
+.box8 {
+    position: fixed;
+    top: 31rem;
+    left: 70.1rem;
+    width: 16rem;
+    height: 12rem;
+    border-radius: 2rem;
+    background-color: #c2efd2;
+}
+
+.text8 {
+    position: absolute;
+    top: 39.8rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    left: 76.5rem;   
+    font-family: 'Pretendard-Regular';
+}
+
+.sideBox {
+    position: relative;
+}
+.H {
+    position: relative;
+    width: 2rem;
+    height: 3rem;
+    background-color: #18a247;
+    border-radius:0.8rem;
+    left: 114rem;
+    font-weight: bold;
+    text-align:center;
+    z-index: 1;
+}
+.A {
+    position: relative;
+    width: 2rem;
+    height: 3rem;
+    background-color: #DADADA;
+    border-radius:0.8rem;
+    left: 114rem;
+    font-weight: bold;
+    text-align:center;
+    bottom: 1.1rem;
+}

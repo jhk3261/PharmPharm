@@ -48,6 +48,7 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
 .container {
     display: flex;
     flex-direction: row;
@@ -77,6 +78,7 @@ a {
     left: 6.2rem;
     font-weight: bold;
     font-size: 1.5rem;
+    font-family: 'Pretendard-Regular';
 }
 .subtext {
     position: relative;
@@ -84,13 +86,14 @@ a {
     left: 6.1rem;
     font-weight: bold;
     font-size: 1.25rem;
+    font-family: 'Pretendard-Regular';
 }
 .subline{
     border: 0.02rem solid #005AAC;
     width: 2.9rem;
     position: relative;
     top: 8.9rem;
-    left: 25.7rem;
+    left: 22.6rem;
 }
 .mainline1 {
     max-width: 77rem;
@@ -124,6 +127,7 @@ a {
     position: relative;
     bottom:60rem;
     left: 24rem;
+    font-family: 'Pretendard-Regular';
 }
 .searchtext {
     position: relative;
@@ -441,7 +445,7 @@ a {
     position: relative;
     font-weight: bold;
     font-size: 1.4rem;
-    bottom:32.5rem;
+    bottom:32.2rem;
     left: 10rem;
 }
 .circle4 {
@@ -451,11 +455,11 @@ a {
     border-radius: 1rem;
     background-color: #005aac;
     left: 14rem;
-    bottom: 36.8rem;
+    bottom: 36.5rem;
 }
 .circletext4 {
     position: relative;
-    bottom: 38.9rem;
+    bottom: 38.6rem;
     left: 14.3rem;
     font-size: 0.7rem;
     font-weight: bold;
@@ -466,7 +470,7 @@ a {
     position: relative;
     font-weight: bold;
     font-size: 1.2rem;
-    bottom: 39.6rem;
+    bottom: 39.5rem;
     left: 14rem;
     font-family: 'Pretendard-Regular';
 }
@@ -519,4 +523,12 @@ a {
     left: 13rem;
     color: #005aac;
     font-family: 'Pretendard-Regular';
+}
+
+/* 맨 밑 번호 */
+.footer {
+    position: relative;
+    bottom: 38rem;
+    left: 9rem;
+    color: black;
 }

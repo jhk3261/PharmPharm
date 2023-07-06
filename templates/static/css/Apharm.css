@@ -1,0 +1,532 @@
+*{
+    box-sizing: content-box;
+}
+@font-face {
+    font-weight: 300;
+    font-family: 'Pretendard-Light';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+}
+@font-face {
+    font-weight: 400;
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+}
+@font-face {
+    font-weight: 500;
+    font-family: 'Pretendard-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+}
+@font-face {
+    font-weight: 600;
+    font-family: 'Pretendard-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+}
+@font-face {
+    font-weight: 700;
+    font-family: 'Pretendard-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+}
+@font-face {
+    font-weight: 800;
+    font-family: 'Pretendard-ExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+}
+* {
+    box-sizing: border-box;
+}
+body, main, div, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+ol, ul,li {
+	list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin:0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.firstP {
+    width: 22rem;
+    height: 13rem;
+}
+
+.hr1 {
+    max-width: 88rem;
+    border: 1.5px solid #18A247;
+    top: 164px;
+}
+
+.line {
+    position: relative;
+    width: 110rem;
+    left: 2rem;
+    border: 0.02rem solid #18A247;
+    top: 6rem;
+}
+.navtext {
+    position: relative;
+    top: 8rem;
+    left: 6.2rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: 'Pretendard-Regular';
+}
+.subtext {
+    position: relative;
+    top: 10rem;
+    left: 6.1rem;
+    font-weight: bold;
+    font-family: 'Pretendard-Regular';
+    font-size: 1.25rem;
+}
+.subline{
+    border: 0.02rem solid #18A247;
+    width: 2.9rem;
+    position: relative;
+    top: 8.9rem;
+    left: 22.8rem;
+}
+.mainline1 {
+    max-width: 77rem;
+    border: 1.5px solid #DADADA;
+    margin-top: 150px;
+}
+.mainline2 {
+    max-width: 77rem;
+    border: 1.5px solid #DADADA;
+    margin-top: 240px;
+}
+.mainline3 {
+    max-width: 77rem;
+    border: 1.5px solid #DADADA;
+    margin-top: 220px;
+    
+}
+.mainline4 {
+    border: 0.02rem solid #DADADA;
+    height:28.9rem;
+    width: 0rem;
+    position: relative;
+    bottom : 29.5rem;
+    left: rem;
+}
+
+
+.searchline {
+    border: 0.02rem solid #18A247;
+    width: 20rem;
+    position: relative;
+    bottom:60rem;
+    left: 24rem;
+}
+.searchtext {
+    position: relative;
+    color: #9f9f9f;
+    /* font-weight: bold; */
+    bottom: 62.8rem;
+    left: 61rem;
+    font-size: 1rem;
+    font-family: 'Pretendard-Regular';
+}
+
+/* 휴베이스 오투약국 */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 20rem; 
+}
+.firstP {
+    position: relative;
+    bottom: 8.7rem;
+    
+}
+.num1 {
+    position: relative;
+    font-weight: bold;
+    font-size: 1.4rem;
+    bottom:36.5rem;
+    left: 10rem;
+}
+.circle {
+    position:relative;
+    width: 3rem;
+    height: 1.3rem;
+    border-radius: 1rem;
+    background-color: #18A247;
+    left: 14rem;
+    bottom: 33.3rem;
+}
+.circletext {
+    position: relative;
+    bottom: 35.3rem;
+    left: 14.22rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: white;
+    font-family: 'Pretendard-Regular';
+}
+.name {
+    position: relative;
+    font-weight: bold;
+    font-size: 1.2rem;
+    bottom: 39.6rem;
+    left: 14rem;
+    font-family: 'Pretendard-Regular';
+}
+.distance {
+    position: relative;
+    font-size: 0.8rem;
+    bottom: 41.9rem;
+    left: 23.5rem;
+    color: #9f9f9f;
+    font-family: 'Pretendard-Regular';
+}
+.phonenum {
+    position: relative;
+    font-size: 0.8rem;
+    font-weight: bold;
+    bottom: 42rem;
+    left: 14rem;
+    font-family: 'Pretendard-Regular';
+}
+.adress {
+    position: relative;
+    font-size: 0.8rem;
+    font-weight: bold;
+    bottom: 41.4rem;
+    left: 13.9rem;
+    font-family: 'Pretendard-Regular';
+}
+.time {
+    position: relative;
+    font-size: 0.8rem;
+    font-weight: bold;
+    bottom: 41rem;
+    left: 13.9rem;
+    font-family: 'Pretendard-Regular';
+}
+.redtext {
+    position: relative;
+    font-size: 0.8rem;
+    font-weight: bold;
+    bottom: 42.8rem;
+    left: 16.4rem;
+    color: red;
+    font-family: 'Pretendard-Regular';
+}
+.medi {
+    position: relative;
+    font-size: 0.8rem;
+    font-weight: bold;
+    bottom: 43rem;
+    left: 13rem;
+    color: #005aac;
+    font-family: 'Pretendard-Regular';
+}
+/* 고은약국 */
+.container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 20rem; 
+}
+.secondP {
+    position: relative;
+    bottom: 9rem;
+    left: 16rem;
+}
+.num2 {
+    position: relative;
+    font-weight: bold;
+    font-size: 1.4rem;
+    bottom:36.5rem;
+    left: 10rem;
+}
+.circle2 {
+    position:relative;
+    width: 2.5rem;
+    height: 1.3rem;
+    border-radius: 1rem;
+    background-color: #9f9f9f;
+    left: 14rem;
+    bottom: 33.1rem;
+}
+.circletext2 {
+    position: relative;
+    bottom: 35.1rem;
+    left: 14.6rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: white;
+    font-family: 'Pretendard-Regular';
+}
+.name2 {
+    position: relative;
+    font-weight: bold;
+    font-size: 1.2rem;
+    bottom: 39.6rem;
+    left: 14rem;
+    font-family: 'Pretendard-Regular';
+}
+.distance2 {
+    position: relative;
+    font-size: 0.8rem;
+    bottom: 42rem;
+    left: 19rem;
+    color: #9f9f9f;
+    font-family: 'Pretendard-Regular';
+}
+.phonenum2 {
+    position: relative;
+    font-size: 0.8rem;
+    font-weight: bold;
+    bottom: 42rem;
+    left: 14rem;
+    font-family: 'Pretendard-Regular';
+}
+.adress2 {
+    position: relative;
+    font-size: 0.8rem;
+    font-weight: bold;
+    bottom: 41.4rem;
+    left: 13.9rem;
+    font-family: 'Pretendard-Regular';
+}
+.time2 {
+    position: relative;
+    font-size: 0.8rem;
+    font-weight: bold;
+    bottom: 41rem;
+    left: 13.9rem;
+    font-family: 'Pretendard-Regular';
+}
+.redtext2 {
+    position: relative;
+    font-size: 0.8rem;
+    font-weight: bold;
+    bottom: 42.8rem;
+    left: 16.4rem;
+    color: red;
+    font-family: 'Pretendard-Regular';
+}
+.medi2 {
+    position: relative;
+    font-size: 0.8rem;
+    font-weight: bold;
+    bottom: 43rem;
+    left: 13.5rem;
+    color: #005aac;
+    font-family: 'Pretendard-Regular';
+}
+
+/* 허니약국 */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 20rem; 
+}
+.thirdP {
+    position: relative;
+    bottom: 19rem;
+    
+}
+.num3 {
+    position: relative;
+    font-weight: bold;
+    font-size: 1.4rem;
+    bottom: 32.3rem;
+    left: 9.5rem;
+}
+.circle3 {
+    position:relative;
+    width: 2.8rem;
+    height: 1.2rem;
+    border-radius: 1rem;
+    background-color: #18A247;
+    left: 14rem;
+    bottom: 36.7rem;
+}
+.circletext3 {
+    position: relative;
+    bottom: 38.7rem;
+    left: 14.13rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: white;
+    font-family: 'Pretendard-Regular';
+}
+.name3 {
+    position: relative;
+    font-weight: bold;
+    font-size: 1.2rem;
+    bottom: 39.6rem;
+    left: 14rem;
+    font-family: 'Pretendard-Regular';
+}
+.distance3 {
+    position: relative;
+    font-size: 0.8rem;
+    bottom: 41.95rem;
+    left: 19rem;
+    color: #9f9f9f;
+    font-family: 'Pretendard-Regular';
+}
+.phonenum3 {
+    position: relative;
+    font-size: 0.8rem;
+    font-weight: bold;
+    bottom: 42rem;
+    left: 14rem;
+    font-family: 'Pretendard-Regular';
+}
+.adress3 {
+    position: relative;
+    font-size: 0.8rem;
+    font-weight: bold;
+    bottom: 41.4rem;
+    left: 13.9rem;
+    font-family: 'Pretendard-Regular';
+}
+.time3 {
+    position: relative;
+    font-size: 0.8rem;
+    font-weight: bold;
+    bottom: 41rem;
+    left: 13.9rem;
+    font-family: 'Pretendard-Regular';
+}
+.redtext3 {
+    position: relative;
+    font-size: 0.8rem;
+    font-weight: bold;
+    bottom: 42.8rem;
+    left: 16.4rem;
+    color: red;
+    font-family: 'Pretendard-Regular';
+}
+.medi3 {
+    position: relative;
+    font-size: 0.8rem;
+    font-weight: bold;
+    bottom: 43rem;
+    left: 13.5rem;
+    color: #005aac;
+    font-family: 'Pretendard-Regular';
+}
+
+/* 다나약국 */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 20rem; 
+}
+.fourthP {
+    position: relative;
+    bottom: 19.7rem;
+    left: 21.6rem;
+}
+.num4 {
+    position: relative;
+    font-weight: bold;
+    font-size: 1.4rem;
+    bottom:31.77rem;
+    left: 7.2rem;
+}
+.circle4 {
+    position:relative;
+    width: 2.8rem;
+    height: 1.2rem;
+    border-radius: 1rem;
+    background-color: #18A247;
+    left: 11.2rem;
+    bottom: 36.2rem;
+}
+.circletext4 {
+    position: relative;
+    bottom: 38.111rem;
+    left: 11.4rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: white;
+    font-family: 'Pretendard-Regular';
+}
+.name4 {
+    position: relative;
+    font-weight: bold;
+    font-size: 1.2rem;
+    bottom: 39.2rem;
+    left: 11.3rem;
+    font-family: 'Pretendard-Regular';
+}
+.distance4 {
+    position: relative;
+    font-size: 0.8rem;
+    bottom: 41.5rem;
+    left: 16.2rem;
+    color: #9f9f9f;
+    font-family: 'Pretendard-Regular';
+}
+.phonenum4 {
+    position: relative;
+    font-size: 0.8rem;
+    font-weight: bold;
+    bottom: 41.4rem;
+    left: 11.4rem;
+    font-family: 'Pretendard-Regular';
+}
+.adress4{
+    position: relative;
+    font-size: 0.8rem;
+    font-weight: bold;
+    bottom: 41.4rem;
+    left: 11.4rem;
+    font-family: 'Pretendard-Regular';
+}
+.time4 {
+    position: relative;
+    font-size: 0.8rem;
+    font-weight: bold;
+    bottom: 41rem;
+    left: 11.4rem;
+    font-family: 'Pretendard-Regular';
+}
+.redtext4 {
+    position: relative;
+    font-size: 0.8rem;
+    font-weight: bold;
+    bottom: 42.8rem;
+    left: 14rem;
+    color: red;
+    font-family: 'Pretendard-Regular';
+}
+.medi4 {
+    position: relative;
+    font-size: 0.8rem;
+    font-weight: bold;
+    bottom: 43rem;
+    left: 11rem;
+    color: #005aac;
+    font-family: 'Pretendard-Regular';
+}
+
+/* 맨 밑 번호 */
+.footer {
+    position: relative;
+    bottom: 38rem;
+    left: 9rem;
+    color: black;
+}
