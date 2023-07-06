@@ -1,0 +1,331 @@
+*{
+    box-sizing: content-box;
+}
+@font-face {
+    font-weight: 300;
+    font-family: 'Pretendard-Light';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+}
+@font-face {
+    font-weight: 400;
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+}
+@font-face {
+    font-weight: 500;
+    font-family: 'Pretendard-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+}
+@font-face {
+    font-weight: 600;
+    font-family: 'Pretendard-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+}
+@font-face {
+    font-weight: 700;
+    font-family: 'Pretendard-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+}
+@font-face {
+    font-weight: 800;
+    font-family: 'Pretendard-ExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+}
+* {
+    box-sizing: border-box;
+}
+body, main, div, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+ol, ul,li {
+	list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin:0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.line{
+    position: relative;
+    top: 3.5rem;
+    max-width: 88rem;
+    left: 1rem;
+    border: 0.02rem solid #005AAC; 
+}
+
+/* 기본정보 */
+.information{
+    position: relative;
+    
+}
+.infobox {
+    width: 39rem;
+    height: 13rem;
+    position: fixed;
+    border: 0.1rem solid #dadada;
+    left: 8rem;
+    top: 7rem;
+    border-radius: 2rem;
+}
+.profilecircle{
+    position: relative;
+    width: 6rem;
+    height:6rem;
+    border-radius: 10rem;
+    background-color: #005aac;
+    top: 10.6rem;
+    left: 10rem;
+}
+.hong {
+    position: relative;
+    font-size: 1.8rem;
+    font-weight: bold;
+    top: 4.6rem;
+    left: 12.2rem;
+    color: white;
+    font-family: 'Pretendard-Regular';
+}
+.name {
+    position: relative;
+    font-size: 1.3rem;
+    font-weight: bold;
+    left: 17rem;
+    font-family: 'Pretendard-Regular';
+}
+
+.email {
+    position: relative;
+    font-size: 0.8rem;
+    font-weight: bold;
+    bottom: rem;
+    left: 17rem;
+    font-family: 'Pretendard-Regular';
+}
+.phonenum {
+    position: relative;
+    font-size: 0.8rem;
+    font-weight: bold;
+    bottom: 2.5rem;
+    left: 17rem;
+    font-family: 'Pretendard-Regular';
+}
+.birth {
+    position: relative;
+    font-size: 0.8rem;
+    bottom: 7.2rem;
+    left: 28rem;
+    font-family: 'Pretendard-Regular';
+}
+.sex {
+    position: relative;
+    font-size: 0.8rem;
+    bottom: 7.3rem;
+    left: 28rem;
+    font-family: 'Pretendard-Regular';
+}
+.height {
+    position: relative;
+    font-size: 0.8rem;
+    bottom: 7.3rem;
+    left: 28rem;
+    font-family: 'Pretendard-Regular';
+}
+.weight {
+    position: relative;
+    font-size: 0.8rem;
+    bottom: 7.3rem;
+    left: 28rem;
+    font-family: 'Pretendard-Regular';
+}
+/* 좋아요,댓글 */
+.commentbox {
+    width: 35rem;
+    height: 5.5rem;
+    position: relative;
+    /* border: 0.3rem solid #dadada; */
+    left: 49.5rem;
+    bottom: 18rem;
+    border-radius: 1rem;
+    background-color: #005aac;
+}
+.scriptbox{
+    width: 35rem;
+    height: 5.5rem;
+    position: relative;
+    left: 49.5rem;
+    bottom: 22rem;
+    border-radius: 1rem;
+    background-color: #005aac;
+}
+
+.commenttext {
+    position: relative;
+    font-size: 1.4rem;
+    font-weight: bold;
+    bottom: 23rem;
+    left: 62rem;
+    display: flex;
+    text-decoration: underline;
+    color: white;
+    font-family: 'Pretendard-Regular';
+}
+.scripttext {
+    position: relative;
+    font-size: 1.4rem;
+    font-weight: bold;
+    bottom: 27rem;
+    left: 61.5rem;
+    text-decoration: underline;
+    color: white;
+    font-family: 'Pretendard-Regular';
+}
+/* 북마크 */
+.secondtext{
+    position: relative;
+    display: flex;
+    top: 10rem;
+}
+.bookbox {
+    width: 77.3rem;
+    height: 20rem;
+    position: relative;
+    border: 0.1rem solid #dadada;
+    left: 8rem;
+    bottom: 23rem;
+    border-radius: 1.8rem;
+}
+/* 나의북마크 */
+.text {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: bold;
+    bottom: 42.5rem;
+    left: 11rem;
+    font-family: 'Pretendard-Regular';
+}
+
+.underline1 {
+    border: 0.01rem solid #dadada;
+    position: relative;
+    bottom: 52.5rem;
+    width: 70rem;
+    left: 11rem;
+}
+
+.underline2 {
+    border: 0.01rem solid #dadada;
+    position: relative;
+    bottom: 47rem;
+    width: 70rem;
+    left: 11rem;
+}
+
+
+.date {
+    position: relative;
+    font-size: 1.2rem;
+    bottom: 52rem;
+    left: 12.5rem;
+    font-weight: bold;
+    font-family: 'Pretendard-Regular';
+}
+.docname {
+    position: relative;
+    font-size: 1.2rem;
+    bottom: 41.4rem;
+    left: 22rem;
+    font-family: 'Pretendard-Regular';
+}
+.pharmname {
+    position: relative;
+    font-size: 1.2rem;
+    bottom: 44.1rem;
+    left: 34.7rem; 
+    font-family: 'Pretendard-Regular';
+}
+.mediname {
+    position: relative;
+    font-size: 1.2rem;
+    bottom: 49.2rem;
+    left:58rem; 
+    font-family: 'Pretendard-Regular';
+}
+
+.position{
+    position: relative;
+    font-size: 1.2rem;
+    bottom: 46.7rem;
+    left: 48.4rem;
+    font-family: 'Pretendard-Regular';
+}
+
+.secondtext { 
+    
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2rem;
+    position: relative;
+    bottom: 10rem;
+    left: 27.6rem;
+    font-family: 'Pretendard-Regular';
+}
+
+.date2{
+    font-size: 1.2rem;
+    position: relative;
+    font-weight: bold;
+    bottom: 71.5rem;
+    left: 12.5rem;
+    font-family: 'Pretendard-Regular';
+}
+.docname2 {
+    position: relative;
+    font-size: 1.2rem;
+    bottom: 77.6rem;
+    right: 6rem;
+    font-family: 'Pretendard-Regular';
+}
+.pharmname2 {
+    position: relative;
+    font-size: 1.2rem;
+    bottom: 77.5rem;
+    right: 3.2rem; 
+    font-family: 'Pretendard-Regular';
+}
+.mediname2 {
+    position: relative;
+    font-size: 1.2rem;
+    bottom: 77.5rem;
+    left:2rem; 
+    font-family: 'Pretendard-Regular';
+}
+
+.position2{
+    position: relative;
+    font-size: 1.2rem;
+    bottom: 77.5rem;
+    right:0.6rem;
+    font-family: 'Pretendard-Regular';
+}
+.iconbox {
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+    background-color: #005aac;
+    bottom: 147rem;
+    left : 99rem;
+    border-radius: 0.7rem;
+}
+.plus {
+    position: relative;
+    bottom: 155.4rem;
+    left: 99.7rem;
+    font-size: 3.6rem;
+    font-weight: bold;
+    color: white;
+}
+
+
