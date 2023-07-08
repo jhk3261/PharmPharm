@@ -48,7 +48,6 @@ a {
     text-decoration: none;
     color: inherit;
 }
-
 .container {
     display: flex;
     flex-direction: row;
@@ -61,7 +60,7 @@ a {
 
 .hr1 {
     max-width: 88rem;
-    border: 1.5px solid #005AAC;
+    border: 1.5px solid #18A247;
     top: 164px;
 }
 
@@ -69,7 +68,7 @@ a {
     position: relative;
     width: 110rem;
     left: 2rem;
-    border: 0.02rem solid #005AAC;
+    border: 0.02rem solid #18A247;
     top: 6rem;
 }
 .navtext {
@@ -85,15 +84,15 @@ a {
     top: 10rem;
     left: 6.1rem;
     font-weight: bold;
-    font-size: 1.25rem;
     font-family: 'Pretendard-Regular';
+    font-size: 1.25rem;
 }
 .subline{
-    border: 0.02rem solid #005AAC;
+    border: 0.02rem solid #18A247;
     width: 2.9rem;
     position: relative;
     top: 8.9rem;
-    left: 22.6rem;
+    left: 22.8rem;
 }
 .mainline1 {
     max-width: 77rem;
@@ -122,12 +121,11 @@ a {
 
 
 .searchline {
-    border: 0.02rem solid #005AAC;
+    border: 0.02rem solid #18A247;
     width: 20rem;
     position: relative;
     bottom:60rem;
     left: 24rem;
-    font-family: 'Pretendard-Regular';
 }
 .searchtext {
     position: relative;
@@ -139,7 +137,7 @@ a {
     font-family: 'Pretendard-Regular';
 }
 
-/* 은하수약국 */
+/* 휴베이스 오투약국 */
 
 .container {
     display: flex;
@@ -164,13 +162,13 @@ a {
     width: 3rem;
     height: 1.3rem;
     border-radius: 1rem;
-    background-color: #005aac;
+    background-color: #18A247;
     left: 14rem;
-    bottom: 33.1rem;
+    bottom: 33.3rem;
 }
 .circletext {
     position: relative;
-    bottom: 35.1rem;
+    bottom: 35.3rem;
     left: 14.22rem;
     font-size: 0.7rem;
     font-weight: bold;
@@ -188,8 +186,8 @@ a {
 .distance {
     position: relative;
     font-size: 0.8rem;
-    bottom: 42rem;
-    left: 20rem;
+    bottom: 41.9rem;
+    left: 23.5rem;
     color: #9f9f9f;
     font-family: 'Pretendard-Regular';
 }
@@ -235,7 +233,7 @@ a {
     color: #005aac;
     font-family: 'Pretendard-Regular';
 }
-/* 한별약국 */
+/* 고은약국 */
 .container {
     display: flex;
     flex-direction: row;
@@ -256,17 +254,17 @@ a {
 }
 .circle2 {
     position:relative;
-    width: 3rem;
+    width: 2.5rem;
     height: 1.3rem;
     border-radius: 1rem;
-    background-color: #005aac;
+    background-color: #9f9f9f;
     left: 14rem;
     bottom: 33.1rem;
 }
 .circletext2 {
     position: relative;
     bottom: 35.1rem;
-    left: 14.3rem;
+    left: 14.6rem;
     font-size: 0.7rem;
     font-weight: bold;
     color: white;
@@ -326,12 +324,12 @@ a {
     font-size: 0.8rem;
     font-weight: bold;
     bottom: 43rem;
-    left: 13rem;
+    left: 13.5rem;
     color: #005aac;
     font-family: 'Pretendard-Regular';
 }
 
-/* 이마트24 */
+/* 허니약국 */
 
 .container {
     display: flex;
@@ -353,17 +351,17 @@ a {
 }
 .circle3 {
     position:relative;
-    width: 3rem;
-    height: 1.3rem;
+    width: 2.8rem;
+    height: 1.2rem;
     border-radius: 1rem;
-    background-color: #9f9f9f;
+    background-color: #18A247;
     left: 14rem;
-    bottom: 37rem;
+    bottom: 36.7rem;
 }
 .circletext3 {
     position: relative;
-    bottom: 39.1rem;
-    left: 14.9rem;
+    bottom: 38.7rem;
+    left: 14.13rem;
     font-size: 0.7rem;
     font-weight: bold;
     color: white;
@@ -380,8 +378,8 @@ a {
 .distance3 {
     position: relative;
     font-size: 0.8rem;
-    bottom: 42rem;
-    left: 25.5rem;
+    bottom: 41.95rem;
+    left: 19rem;
     color: #9f9f9f;
     font-family: 'Pretendard-Regular';
 }
@@ -428,7 +426,7 @@ a {
     font-family: 'Pretendard-Regular';
 }
 
-/* 해맑은약국 */
+/* 다나약국 */
 
 .container {
     display: flex;
@@ -445,22 +443,22 @@ a {
     position: relative;
     font-weight: bold;
     font-size: 1.4rem;
-    bottom:32.2rem;
-    left: 10rem;
+    bottom:31.77rem;
+    left: 7.2rem;
 }
 .circle4 {
     position:relative;
-    width: 3rem;
-    height: 1.3rem;
+    width: 2.8rem;
+    height: 1.2rem;
     border-radius: 1rem;
-    background-color: #005aac;
-    left: 14rem;
-    bottom: 36.5rem;
+    background-color: #18A247;
+    left: 11.2rem;
+    bottom: 36.2rem;
 }
 .circletext4 {
     position: relative;
-    bottom: 38.6rem;
-    left: 14.3rem;
+    bottom: 38.111rem;
+    left: 11.4rem;
     font-size: 0.7rem;
     font-weight: bold;
     color: white;
@@ -470,15 +468,15 @@ a {
     position: relative;
     font-weight: bold;
     font-size: 1.2rem;
-    bottom: 39.5rem;
-    left: 14rem;
+    bottom: 39.2rem;
+    left: 11.3rem;
     font-family: 'Pretendard-Regular';
 }
 .distance4 {
     position: relative;
     font-size: 0.8rem;
-    bottom: 42rem;
-    left: 20rem;
+    bottom: 41.5rem;
+    left: 16.2rem;
     color: #9f9f9f;
     font-family: 'Pretendard-Regular';
 }
@@ -486,8 +484,8 @@ a {
     position: relative;
     font-size: 0.8rem;
     font-weight: bold;
-    bottom: 42rem;
-    left: 14rem;
+    bottom: 41.4rem;
+    left: 11.4rem;
     font-family: 'Pretendard-Regular';
 }
 .adress4{
@@ -495,7 +493,7 @@ a {
     font-size: 0.8rem;
     font-weight: bold;
     bottom: 41.4rem;
-    left: 13.9rem;
+    left: 11.4rem;
     font-family: 'Pretendard-Regular';
 }
 .time4 {
@@ -503,7 +501,7 @@ a {
     font-size: 0.8rem;
     font-weight: bold;
     bottom: 41rem;
-    left: 13.9rem;
+    left: 11.4rem;
     font-family: 'Pretendard-Regular';
 }
 .redtext4 {
@@ -511,7 +509,7 @@ a {
     font-size: 0.8rem;
     font-weight: bold;
     bottom: 42.8rem;
-    left: 16.4rem;
+    left: 14rem;
     color: red;
     font-family: 'Pretendard-Regular';
 }
@@ -520,7 +518,7 @@ a {
     font-size: 0.8rem;
     font-weight: bold;
     bottom: 43rem;
-    left: 13rem;
+    left: 11rem;
     color: #005aac;
     font-family: 'Pretendard-Regular';
 }

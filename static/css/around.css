@@ -53,18 +53,17 @@ html {
 
 h2 {
     color: #000;
-    font-size: 1rem;
     font-family: 'Pretendard-Bold';
     font-style: normal;
-    position: absolute;
     font-size: 2rem;
-    top:6rem;
-    left: 5rem;
+    text-align: left;
+    margin-left: 10rem;
+    margin-top:2rem;
 }
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
     height: 100vh;
   }
 
@@ -83,12 +82,12 @@ body {
     margin-left: 0;
     width: 8rem;
     height: 4rem;
-    position: relative;
-    bottom: 9rem;
     color: black;
     font-family: 'Pretendard-Light';
     font-size: 1rem;
     transition: background-color 0.3s, color 0.3s;
+
+    margin: 3rem 0;
   }
 
   .button:hover {
@@ -99,29 +98,19 @@ body {
     background-color: #34B962;
     color: white;
   }
-  .product1 {
+  .List{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .product {
         display: flex;
         align-items: center; /* 세로 정렬을 위한 속성 */
         flex-direction: column;
-        position: absolute;
-        top: 38%;
-        margin-bottom: 2rem;
-  }
-  .product2 {
-    display: flex;
-    align-items: center; /* 세로 정렬을 위한 속성 */
-    flex-direction: column;
-    position: absolute;
-    margin-left: 45rem;
+        margin: 0 3rem;
   }
 
-  .product3 {
-    display: flex;
-    align-items: center; /* 세로 정렬을 위한 속성 */
-    flex-direction: column;
-    position: absolute;
-    margin-right: 90rem;
-  }
 
 
   img {
