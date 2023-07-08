@@ -50,7 +50,6 @@ html {
     padding:0;
     font-size : 16px;
 }
-
 button{
 
     background: inherit ; border:none; box-shadow:none; border-radius:0; padding:0; overflow:visible; cursor:pointer}
@@ -88,9 +87,10 @@ select::-ms-expand { display: none; }
 /* 여기서부터 직접 짠 코드 시작 */
 
 .wrap_all{
+    width:1024px;
     display: grid;
     grid-template-columns: 14fr 72fr 14fr;
-
+    margin: 0 auto;
 }
 
 .title{
