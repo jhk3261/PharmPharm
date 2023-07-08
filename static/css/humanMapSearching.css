@@ -1,11 +1,44 @@
-body,
+@font-face {
+    font-weight: 300;
+    font-family: 'Pretendard-Light';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+}
+@font-face {
+    font-weight: 400;
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+}
+@font-face {
+    font-weight: 500;
+    font-family: 'Pretendard-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+}
+@font-face {
+    font-weight: 600;
+    font-family: 'Pretendard-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+}
+@font-face {
+    font-weight: 700;
+    font-family: 'Pretendard-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+}
+@font-face {
+    font-weight: 800;
+    font-family: 'Pretendard-ExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+}
 html {
     padding: 0;
     margin: 5vw;
-    overflow: auto;
+    font-size: 16px;
+}
+body {
+    overflow: hidden;
+    padding: 0;
+    margin: 5vw;
     background-color: white;
 }
-
 button {
     border: 0;
     outline: 0;
@@ -23,6 +56,7 @@ p {
     border-radius: 15px 15px 0px 0px;
     background-color: white;
     position: fixed;
+    left:11.6rem;
     width: 30vw;
     height: 18vh;
     display: inline-block;
@@ -82,10 +116,19 @@ p {
     justify-content: center;
     box-sizing: content-box;
     width: 30vw;
+    height: 61.5vh;
     margin-top: 18vh;
+    margin-left: 2rem;
     display: inline-block;
-    z-index: 5;
+    z-index: 2;
     position: relative;
+
+    overflow-x: hidden;
+    overflow-y:scroll;
+    -ms-overflow-style: none;
+}
+.searchLIst::-webkit-scrollbar{
+    display: none;
 }
 
 /* ===========1번 리스트=========== */
@@ -459,11 +502,11 @@ p {
     border-left: none;
     background-color: none;
     position: fixed;
-    right: 10vw;
+    right: 12rem;
     top: 10vw;
     width: 49vw;
-    height: 81vh;
-    z-index: 1;
+    height: 37.5rem;
+    z-index: -11;
 }
 
 /* ===========HA======== */
