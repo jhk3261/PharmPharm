@@ -39,21 +39,22 @@ header{
 }
 
 aside{
-    padding-left: 100px;
     width: 300px;
     height: 840px;
     
     border-right: 1px solid #dadada;
 }
 main{
+    width: 1100px;
+    margin: 0 auto;
     display: flex;
 }
 article{
-    width: 918px;
+    width: 800px;
     height: 843px;
 }
 section{
-    width: 918px;
+    width: 800px;
     height: 185px;
     border-bottom: 2px solid #dadada;
 }
@@ -186,8 +187,8 @@ section{
 
 /* article */
 .Article_Container{
-    margin: 28px;
-    width: 926px;
+    margin: 20px;
+    width: 800px;
     display: flex;
     flex-direction: column;
 }
@@ -248,14 +249,14 @@ input:focus{
 
 /* section */
 .Section_Container{
-    width: 918px;
+    width: 800px;
     height: 740px;
     overflow-y: scroll;
     overflow-x: hidden;
 }
 .Section_Box{
     display: flex;
-    width: 918px;
+    width: 800px;
     height: 185px;
 }
 .porfil_img_Container{
@@ -310,6 +311,7 @@ input:focus{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-right: 1rem;
     width: 212px;
     height: 188px;
 }
@@ -318,16 +320,16 @@ input:focus{
 }
 .Section_Box_Bookmark_Icon{
     position: absolute;
-    width: 18.75px;
+    width: 20px;
     height: 30px;
-    top: 20px;
+    top: 30px;
     right: 23px;
 }
 .Booking_Icon{
     position: absolute;
-    width: 159px;
+    width: 155px;
     height: 45px;
-    bottom: 45px;
+    bottom: 25px;
     border: none;
     border-radius: 10px;
     background-color: #005aac;

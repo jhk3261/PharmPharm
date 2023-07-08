@@ -28,6 +28,20 @@
     font-family: 'Pretendard-ExtraBold';
     src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
 }
+/*color*/
+:root {
+    /* mainColor */
+    --first-color:#005AAC;
+    --second-color:#E5EEF7;
+
+    /*hoverColor*/
+    --hover-color:  #AEDEFF;
+    --hover-second-color: rgba(203,234,255,0.25);
+
+    /*backgroundColors*/
+    --body-bg-color: rgba(10,96,175,0.7);
+    --btn-bg-color:#E5EEF7;
+}
 html {
     margin:0;
     padding:0;
@@ -113,22 +127,71 @@ header {
 
     cursor: pointer;
 }
-.Tools div {
+/*검색창*/
+.Tools .Search {
+    position: relative;
+
     width: 1.9rem;
     height: 1.9rem;
     border-radius: 50px;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
     background-color: transparent;
+    overflow: hidden;
+
     transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
-.Tools div:hover {
-    background-color: #E5EEF7;
+.Tools .Search:hover {
+    background-color: var(--second-color);
 }
+.Tools .Search.active {
+    width:14rem;
+
+    background-color: var(--second-color);
+}
+.Tools i{
+    position: absolute;
+    top:0; left:0;
+    transform: translate(50%,50%);
+}
+.Tools i.active {
+    position: relative;
+    transform: translate(0,0);
+    padding-right: 0.4rem;
+    padding-top:0.1rem;
+}
+.Tools .Search .input {
+    position: relative;
+    width:11rem;
+    height: 1.9rem;
+    left: 0.5rem;
+    display: none;
+}
+.Tools .Search .input.active {
+    display: block;
+}
+.AnimalWrap .Tools .Search .input.active {
+    display: block;
+}
+.Tools .Search .input input {
+    position: absolute;
+    top:0;
+    width:100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 5px 0;
+    color: #9F9F9F;
+
+    font-size: 0.8rem;
+    font-family: 'Pretendard-Regular';
+}
+
 nav {
     display: flex;
     flex-direction: row;
@@ -179,8 +242,10 @@ main {
     
     background-color: white;
 
-    width: 100vw;
+    width: 1440px;
     height: 100vh;
+
+    margin: 0 auto;
     overflow: hidden;
 }
 .wrap {
@@ -263,7 +328,7 @@ form {
 
 /*글목록*/
 .ListWrap {
-    max-width: 62rem;
+    width: 62rem;
     overflow: hidden;
 }
 .ListWrap hr {
@@ -437,7 +502,10 @@ footer .footerMem {
 }
 
 /*animal*/
-.AnimalWrap .Tools div:hover {
+.AnimalWrap .Tools .Search:hover {
+    background-color: #E8F6ED;
+}
+.AnimalWrap .Tools .Search.active {
     background-color: #E8F6ED;
 }
 .AnimalWrap nav .MainMenu:hover {
