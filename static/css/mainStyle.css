@@ -524,6 +524,9 @@ footer .footerMem {
 .AnimalWrap .Tools .Search:hover {
     background-color: #E8F6ED;
 }
+.AnimalWrap .Tools .Search.active {
+    background-color: #E8F6ED;
+}
 .AnimalWrap nav .MainMenu:hover {
     background-color: #E8F6ED;
 }

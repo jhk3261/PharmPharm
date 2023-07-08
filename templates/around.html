@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="/static/css/around.css">
     <script src="https://kit.fontawesome.com/32afc995e9.js" crossorigin="anonymous"></script>
+    <script src="/static/js/around.js" defer></script>
 </head>
 <body>
   <div class="title">
@@ -14,16 +15,16 @@
     
   <div class="button-container">
     <button class="button selected">구충제</button>
-    <button class="button" onclick="goToPage('./around2.html')">세정제</button>
-    <button class="button" onclick="goToPage('./around3.html')">항생제</button>
-    <button class="button" onclick="goToPage('./around4.html')">관절염치료제</button>
-    <button class="button" onclick="goToPage('./around5.html')">피부질환제</button>
-    <button class="button" onclick="goToPage('./around6.html')">기타</button>
+    <button class="button">세정제</button>
+    <button class="button">항생제</button>
+    <button class="button">관절염치료제</button>
+    <button class="button">피부질환제</button>
+    <button class="button">기타</button>
   </div>
 
   <div class="List" id="first">
     <div class="product">
-      <a href="https://smartstore.naver.com/elanco_my-pet-and-i/products/4826673293">
+      <a href="https://smartstore.naver.com/elanco_my-pet-and-i/products/4826673293" target='_blank'/>
       <img src="/static/img/product1-1.png" alt=""></a>
       <h3>세레스토</h3>
       <h4>구충 예방 목걸이</h4>
@@ -31,7 +32,7 @@
       <span class="discount-price">58,500원</span>
     </div>
     <div class="product">
-      <a href="https://www.coupang.com/vp/products/7048002328?itemId=17446069391&vendorItemId=74838471336&sourceType=srp_product_ads&clickEventId=7ed578fc-361e-419c-939c-571d1e0524a0&korePlacement=15&koreSubPlacement=1&q=%EB%8B%A5%ED%84%B0%EB%B0%94%EC%9D%B4+%EA%B5%AC%EA%B0%95%EC%BC%80%EC%96%B4&itemsCount=36&searchId=525b7a13c78240eba525cb7e0dd4ef6b&rank=0&isAddedCart=">
+      <a href="https://www.coupang.com/vp/products/7048002328?itemId=17446069391&vendorItemId=74838471336&sourceType=srp_product_ads&clickEventId=7ed578fc-361e-419c-939c-571d1e0524a0&korePlacement=15&koreSubPlacement=1&q=%EB%8B%A5%ED%84%B0%EB%B0%94%EC%9D%B4+%EA%B5%AC%EA%B0%95%EC%BC%80%EC%96%B4&itemsCount=36&searchId=525b7a13c78240eba525cb7e0dd4ef6b&rank=0&isAddedCart=" target='_blank'>
       <img src="/static/img/product1-2.png" alt=""></a>
       <h3>닥터바이 구강케어</h3>
       <h4>구강 세균 치료</h4>
@@ -39,12 +40,136 @@
       <span class="discount-price">80,700원</span>
     </div>
     <div class="product">
-      <a href="https://www.coupang.com/vp/products/6060368381?itemId=11022497746&vendorItemId=78302138911&sourceType=srp_product_ads&clickEventId=7ebc0ac3-0bfd-4f8e-97f2-6a9c8f4cf5a9&korePlacement=15&koreSubPlacement=5&q=%EB%B0%98%EB%A0%A4%EB%8F%99%EB%AC%BC+%EA%B5%AC%EC%B6%A9%EC%A0%9C&itemsCount=17&searchId=9c1c2af4e76949a3bceae3e780e1bab7&rank=4&isAddedCart=">
+      <a href="https://www.coupang.com/vp/products/6060368381?itemId=11022497746&vendorItemId=78302138911&sourceType=srp_product_ads&clickEventId=7ebc0ac3-0bfd-4f8e-97f2-6a9c8f4cf5a9&korePlacement=15&koreSubPlacement=5&q=%EB%B0%98%EB%A0%A4%EB%8F%99%EB%AC%BC+%EA%B5%AC%EC%B6%A9%EC%A0%9C&itemsCount=17&searchId=9c1c2af4e76949a3bceae3e780e1bab7&rank=4&isAddedCart=" target='_blank'>
       <img src="/static/img/product1-3.png" alt=""></a>
       <h3>닥터바이 브레스</h3>
       <h4>호흡기 영양제</h4>
       <del class="price">79,800원</del>
       <span class="discount-price">55,800원</span>
+    </div>
+  </div>
+  <div class="List" id="second">
+    <div class="product">
+      <a href="https://www.coupang.com/vp/products/5455538304?itemId=8337340900&vendorItemId=75625162316&q=%EB%A6%B4%EB%A6%AC%EB%B2%B3&itemsCount=36&searchId=5e7ec560ad984157877fed14a7c09567&rank=1&isAddedCart=" target='_blank'>
+      <img src="/static/img/product2-1.png" alt=""></a>
+      <h3>릴리벳</h3>
+      <h4>살균소독제</h4>
+      <del class="price">10,000원</del>
+      <span class="discount-price">8900원</span>
+    </div>
+    <div class="product">
+      <a href="https://www.coupang.com/vp/products/207628580?itemId=614903830&vendorItemId=4613466510&q=%EB%8F%99%EB%AC%BC+%EC%82%B4%EA%B7%A0%EC%86%8C%EB%8F%85%EC%A0%9C&itemsCount=36&searchId=bcd39371156f475997ba68305b56e9f9&rank=10&isAddedCart=" target='_blank'>
+        <img src="/static/img/product2-3.png" alt=""></a>
+        <h3>바이오클</h3>
+        <h4>펫 탈취제</h4>
+        <del class="price">30,000원</del>
+        <span class="discount-price">20,450원</span>
+    </div>
+    <div class="product">
+      <a href="https://www.coupang.com/vp/products/1085647175?itemId=7323151760&vendorItemId=74614403701&pickType=COU_PICK&q=%EC%A0%95%EA%B8%80%EB%AA%AC%EC%8A%A4%ED%84%B0+%EA%B5%AC%EA%B0%95%EC%B2%AD%EA%B2%B0%EC%A0%9C&itemsCount=36&searchId=a8b6f1ce5b564e22bb659ad83049388f&rank=1&isAddedCart=" target='_blank'>
+      <img src="/static/img/product2-2.png" alt=""></a>
+      <h3>정글몬스터</h3>
+      <h4>구강 청결제</h4>
+      <del class="price">31,500원</del>
+      <span class="discount-price">29,570원</span>
+    </div>
+  </div>
+  <div class="List" id="third">
+    <div class="product"><a href="https://www.coupang.com/vp/products/6559331399?itemId=14677208792&vendorItemId=81918215482&sourceType=srp_product_ads&clickEventId=b4f03e9f-4658-4124-8fd3-0b3efd6f57c0&korePlacement=15&koreSubPlacement=6&q=%EB%B0%98%EB%A0%A4%EB%8F%99%EB%AC%BC+%ED%95%AD%EC%83%9D%EC%A0%9C&itemsCount=36&searchId=fe8db46ad8fd48b29a5efe85f4cab54a&rank=5&isAddedCart=" target='_blank'> 
+      <img src="/static/img/product3-1.png" alt=""></a>
+      <h3>닥터바이</h3>
+      <h4>재채기 기관지 항생제</h4>
+      <del class="price">119,700원</del>
+      <span class="discount-price">80,700원</span>
+    </div>
+    <div class="product"><a href="https://www.coupang.com/vp/products/172147098?itemId=492196019&vendorItemId=4246766137&pickType=COU_PICK&q=%EB%B0%98%EB%A0%A4%EB%8F%99%EB%AC%BC+%ED%95%AD%EC%83%9D%EC%A0%9C&itemsCount=36&searchId=fe8db46ad8fd48b29a5efe85f4cab54a&rank=2&isAddedCart=" target='_blank'>
+        <img src="/static/img/product3-3.png" alt=""></a>
+        <h3>펫에그</h3>
+        <h4>지사제</h4>
+        <del class="price">18,000원</del>
+        <span class="discount-price">16,190원</span>
+    </div>
+    <div class="product"><a href="https://www.coupang.com/vp/products/1313977884?itemId=2331842757&vendorItemId=70328380057&q=%EB%B0%98%EB%A0%A4%EB%8F%99%EB%AC%BC+%ED%95%AD%EC%83%9D%EC%A0%9C&itemsCount=36&searchId=fe8db46ad8fd48b29a5efe85f4cab54a&rank=10&isAddedCart=" target='_blank'>
+        <img src="/static/img/product3-2.png" alt=""></a>
+        <h3>식스스텝</h3>
+        <h4>항산화제</h4>
+        <del class="price">34,900원</del>
+        <span class="discount-price">32,900원</span>
+    </div>
+  </div>
+  <div class="List" id="fourth">
+    <div class="product"><a href="https://www.coupang.com/vp/products/6919179178?itemId=16702414071&vendorItemId=4377597110&q=%EB%8F%99%EB%AC%BC+%EA%B4%80%EC%A0%88%EC%97%BC+%EC%B9%98%EB%A3%8C%EC%A0%9C&itemsCount=36&searchId=cb202fb38c08406e8c536e4553157be9&rank=2&isAddedCart=" target='_blank'>
+      <img src="/static/img/product4-1.png" alt=""></a>
+      <h3>닥터바이</h3>
+      <h4>관절영양제</h4>
+      <del class="price">81,600원</del>
+      <span class="discount-price">45,800원</span>
+    </div>
+    <div class="product"><a href="https://www.coupang.com/vp/products/7088352914?itemId=17706231906&vendorItemId=84922634908&sourceType=srp_product_ads&clickEventId=3f490573-9319-47e6-bb63-56de4fd2bc0f&korePlacement=15&koreSubPlacement=1&q=%EB%8F%99%EB%AC%BC+%EA%B4%80%EC%A0%88+%EC%B9%98%EB%A3%8C%EC%A0%9C&itemsCount=36&searchId=38b9f30672d34628a6be4964cadb6617&rank=0&isAddedCart=" target='_blank'>
+      <img src="/static/img/product4-3.png" alt=""></a>
+      <h3>펫시딘</h3>
+      <h4>관절영양제</h4>
+      <del class="price">57,600원</del>
+      <span class="discount-price">39,600원</span>
+    </div>
+    <div class="product"><a href="https://www.coupang.com/vp/products/7415508253?itemId=19223611883&vendorItemId=80240902976&q=%EB%8F%99%EB%AC%BC+%EA%B4%80%EC%A0%88%EC%97%BC+%EC%B9%98%EB%A3%8C%EC%A0%9C&itemsCount=36&searchId=cb202fb38c08406e8c536e4553157be9&rank=3&isAddedCart=" target='_blank'>
+      <img src="/static/img/product4-2.png" alt=""></a>
+      <h3>바이오펫츠</h3>
+      <h4>관절영양제</h4>
+      <del class="price">25,000원</del>
+      <span class="discount-price">23,000원</span>
+    </div>
+  </div>
+  <div class="List" id="fifth">
+    <div class="product"> 
+      <a href="https://www.coupang.com/vp/products/1853422411?itemId=3150462741&vendorItemId=71138046560&q=%EB%8F%99%EB%AC%BC+%ED%94%BC%EB%B6%80%EC%A7%88%ED%99%98%EC%A0%9C&itemsCount=36&searchId=633cdac7f6b04598891a00379b53ef95&rank=13&isAddedCart=" target='_blank'>
+      <img src="/static/img/product5-1.png" alt=""></a>
+      <h3>마데카스켈</h3>
+      <h4>피부연고</h4>
+      <del class="price">28,100원</del>
+      <span class="discount-price">24,000원</span>
+    </div>
+    <div class="product">
+      <a href="https://www.coupang.com/vp/products/7070265837?itemId=17555391156&vendorItemId=86124713194&q=%EB%8F%99%EB%AC%BC+%ED%94%BC%EB%B6%80%EC%A7%88%ED%99%98%EC%A0%9C&itemsCount=36&searchId=633cdac7f6b04598891a00379b53ef95&rank=16&isAddedCart=" target='_blank'>
+      <img src="/static/img/product5-3.png" alt=""></a>
+      <h3>센텔라</h3>
+      <h4>피부연고</h4>
+      <del class="price">22,000원</del>
+      <span class="discount-price">20,000원</span>
+    </div>
+    <div class="product">
+      <a href="https://www.coupang.com/vp/products/5696364005?itemId=9512216793&vendorItemId=74410736943&q=%EB%8F%99%EB%AC%BC+%ED%94%BC%EB%B6%80%EC%A7%88%ED%99%98%EC%A0%9C&itemsCount=36&searchId=633cdac7f6b04598891a00379b53ef95&rank=6&isAddedCart=" target='_blank'>
+      <img src="/static/img/product5-2.png" alt=""></a>
+      <h3>디페토</h3>
+      <h4>피부영양제</h4>
+      <del class="price">215,400원</del>
+      <span class="discount-price">75,900원</span>
+    </div>
+  </div>
+  <div class="List" id="sixth">
+    <div class="product">
+      <a href="https://www.coupang.com/vp/products/1821941195?itemId=3100180564&vendorItemId=71087964616&sourceType=srp_product_ads&clickEventId=adac242f-5ecc-4207-9933-51b991eb2f94&korePlacement=15&koreSubPlacement=15&q=%EB%8F%99%EB%AC%BC+%EB%AF%B8%EC%9A%A9%ED%92%88&itemsCount=36&searchId=df7930eccfbf488285a13e0ceb194eb6&rank=14&isAddedCart=" target='_blank'>
+      <img src="/static/img/product6-1.png" alt=""></a>
+      <h3>마이펫</h3>
+      <h4>이발기</h4>
+      <del class="price">20,000원</del>
+      <span class="discount-price">15,000원</span>
+    </div>
+    <div class="product">
+      <a href="https://www.coupang.com/vp/products/7235145807?itemId=18369112119&vendorItemId=85512672169&sourceType=srp_product_ads&clickEventId=06348b50-1119-435f-9267-3f08dbb4a174&korePlacement=15&koreSubPlacement=1&q=%EB%8F%99%EB%AC%BC+%EC%B2%B4%EC%98%A8%EA%B3%84&itemsCount=36&searchId=fc372d351aea4aa09d78274cdb47039a&rank=0&isAddedCart=" target='_blank'>
+      <img src="/static/img/product6-3.png" alt=""></a>
+      <h3>지씨비엠</h3>
+      <h4>체온계</h4>
+      <del class="price">12,900원</del>
+      <span class="discount-price">5,900원</span>
+    </div>
+    <div class="product">
+      <a href="https://www.coupang.com/vp/products/6320592339?itemId=13170853352&vendorItemId=80429520644&q=%EB%8F%99%EB%AC%BC+%EC%9D%98%EB%A3%8C%EC%9A%A9%ED%92%88&itemsCount=36&searchId=2be9bbabcd35461ba8fc9f70f58b8fb0&rank=19&isAddedCart=" target='_blank'>
+      <img src="/static/img/product6-2.png" alt=""></a>
+      <h3>SIMCRO</h3>
+      <h4>의료용 주사기</h4>
+      <del class="price">50,000원</del>
+      <span class="discount-price">44,000원</span>
     </div>
   </div>
 

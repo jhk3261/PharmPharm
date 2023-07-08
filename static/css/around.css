@@ -88,6 +88,7 @@ body {
     transition: background-color 0.3s, color 0.3s;
 
     margin: 3rem 0;
+    cursor: pointer;
   }
 
   .button:hover {
@@ -111,7 +112,24 @@ body {
         margin: 0 3rem;
   }
 
-
+#first{
+  visibility: visible;
+}
+#second{
+  display: none;
+}
+#third{
+  display: none;
+}
+#fourth{
+  display: none;
+}
+#fifth{
+  display: none;
+}
+#sixth{
+  display: none;
+}
 
   img {
     width: 15rem;
