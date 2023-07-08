@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/32afc995e9.js" crossorigin="anonymous"></script>
     <title>PharmPharm</title>
-    <link rel="stylesheet" href="/000_IdeaMarathon/PharmPharm/static/css/Style_shh.css">
-    <script src="/000_IdeaMarathon/PharmPharm/static/js/main_shh.js" defer></script>
+    <link rel="stylesheet" href="/static/css/contact.css">
+    <script src="/static/js/contact.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -162,7 +163,7 @@
                                     <div class="Modal">
                                         <div class="Modal_Content">
                                             <span class="Modal_Close">&times;</span>
-                                            <form action="">
+                                            <form>
                                                 <span class="Modal_Content_Input_Label">예약일시</span>
                                                 <span class="red">*</span><br>
                                                 <input class="Modal_Content_Input" type="datetime-local" name="datetime" value="2023-06-30T10:30"><br>
@@ -172,14 +173,14 @@
                                                 <span class="Modal_Content_Input_Label">연락처</span>
                                                 <span class="red">*</span><br>
                                                 <input class="Modal_Content_Input_Txt1" type="text" placeholder="연락처를 입력해주세요"><br>
-                                                <!-- <div class="text_booking">
-                                                    <label for="textarea">예약메모</label><br>
+                                                <div class="text_booking">
+                                                    <label class="text_booking_txt" for="textarea">예약메모</label><br>
                                                     <div class="textLengthWrap">
-                                                        <p class="textCount">(0자</p>
+                                                        <p>(</p>
+                                                        <p class="textCount">0자</p>
                                                         <p class="textTotal">/200자)</p>
                                                     </div>
-                                                </div> -->
-                                                <label for="textarea">예약메모</label><br>
+                                                </div>
                                                 <textarea class="Modal_Content_Input_Txt2" placeholder="예약관련 내부 메모" maxlength="300" resize:none;></textarea>
                                                 <div class="Modal_Content_Input_CS">
                                                     <button class="Modal_Content_Input_Cancel">취소</button>
@@ -216,7 +217,7 @@
                                     <div class="Modal">
                                         <div class="Modal_Content">
                                             <span class="Modal_Close">&times;</span>
-                                            <form action="">
+                                            <form>
                                                 <span class="Modal_Content_Input_Label">예약일시</span>
                                                 <span class="red">*</span>
                                                 <input class="Modal_Content_Input" type="datetime-local" name="datetime" value="2023-06-30T10:30">
@@ -226,7 +227,14 @@
                                                 <span class="Modal_Content_Input_Label">연락처</span>
                                                 <span class="red">*</span>
                                                 <input class="Modal_Content_Input_Txt1" type="text" placeholder="연락처를 입력해주세요">
-                                                <label for="textarea">예약메모</label>
+                                                <div class="text_booking">
+                                                    <label class="text_booking_txt" for="textarea">예약메모</label><br>
+                                                    <div class="textLengthWrap">
+                                                        <p>(</p>
+                                                        <p class="textCount">0자</p>
+                                                        <p class="textTotal">/200자)</p>
+                                                    </div>
+                                                </div>
                                                 <textarea class="Modal_Content_Input_Txt2" placeholder="예약관련 내부 메모" maxlength="300" resize:none;></textarea>
                                                 <div class="Modal_Content_Input_CS">
                                                     <button class="Modal_Content_Input_Cancel">취소</button>
@@ -263,7 +271,7 @@
                                     <div class="Modal">
                                         <div class="Modal_Content">
                                             <span class="Modal_Close">&times;</span>
-                                            <form action="">
+                                            <form>
                                                 <span class="Modal_Content_Input_Label">예약일시</span>
                                                 <span class="red">*</span>
                                                 <input class="Modal_Content_Input" type="datetime-local" name="datetime" value="2023-06-30T10:30">
@@ -273,7 +281,14 @@
                                                 <span class="Modal_Content_Input_Label">연락처</span>
                                                 <span class="red">*</span>
                                                 <input class="Modal_Content_Input_Txt1" type="text" placeholder="연락처를 입력해주세요">
-                                                <label for="textarea">예약메모</label>
+                                                <div class="text_booking">
+                                                    <label class="text_booking_txt" for="textarea">예약메모</label><br>
+                                                    <div class="textLengthWrap">
+                                                        <p>(</p>
+                                                        <p class="textCount">0자</p>
+                                                        <p class="textTotal">/200자)</p>
+                                                    </div>
+                                                </div>
                                                 <textarea class="Modal_Content_Input_Txt2" placeholder="예약관련 내부 메모" maxlength="300" resize:none;></textarea>
                                                 <div class="Modal_Content_Input_CS">
                                                     <button class="Modal_Content_Input_Cancel">취소</button>
@@ -310,7 +325,7 @@
                                     <div class="Modal">
                                         <div class="Modal_Content">
                                             <span class="Modal_Close">&times;</span>
-                                            <form action="">
+                                            <form>
                                                 <span class="Modal_Content_Input_Label">예약일시</span>
                                                 <span class="red">*</span>
                                                 <input class="Modal_Content_Input" type="datetime-local" name="datetime" value="2023-06-30T10:30">
@@ -320,7 +335,14 @@
                                                 <span class="Modal_Content_Input_Label">연락처</span>
                                                 <span class="red">*</span>
                                                 <input class="Modal_Content_Input_Txt1" type="text" placeholder="연락처를 입력해주세요">
-                                                <label for="textarea">예약메모</label>
+                                                <div class="text_booking">
+                                                    <label class="text_booking_txt" for="textarea">예약메모</label><br>
+                                                    <div class="textLengthWrap">
+                                                        <p>(</p>
+                                                        <p class="textCount">0자</p>
+                                                        <p class="textTotal">/200자)</p>
+                                                    </div>
+                                                </div>
                                                 <textarea class="Modal_Content_Input_Txt2" placeholder="예약관련 내부 메모" maxlength="300" resize:none;></textarea>
                                                 <div class="Modal_Content_Input_CS">
                                                     <button class="Modal_Content_Input_Cancel">취소</button>

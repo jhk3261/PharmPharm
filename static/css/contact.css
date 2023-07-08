@@ -420,19 +420,26 @@ input:focus{
     font-family: 'Pretendard-Medium';
     font-size: 16px;
 }
-/* .text_booking{
-    position: absolute;
+.text_booking{
     box-sizing: content-box;
     display: flex;
-    justify-content: space-between;  
-} */
+    justify-content: space-between;
+}
+.text_booking_txt{
+    padding-top: 10px;
+}
 label{
     font-family: 'Pretendard-Medium';
     font-size: 18px;
 }
-/* .textLengthWrap{
+.textLengthWrap{
     display: flex;
-} */
+    color: gray;
+    margin-right: 10px;
+
+    font-family: 'Pretendard-Medium';
+    font-size: 12px;
+}
 .Modal_Content_Input_Txt2{
     background: white;
     width: 450px;
