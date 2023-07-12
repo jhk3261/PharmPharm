@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>약국 찾기</title>
     <link rel="stylesheet" href="/static/css/humanMapSearching.css">
+    <script src="https://kit.fontawesome.com/32afc995e9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -13,8 +14,12 @@
         <br>
         <p class="searchQ">현위치에서 가까운 약 판매점 찾기</p>
         <br>
-        <input class="searchIn" type="text" placeholder="   현위치를 입력하세요.   ">
-        <br>
+        <div class="ArticleSearch" id="ArticleSearch">
+            <form>
+                <input type="text" id="user-current-point" placeholder="검색어를 입력하세요"/> 
+                <button type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #005AAC;"></i></button>
+            </form>
+        </div>
         <br>
         <div class="btnClass">
             <button class="pharmBtn">약국</button>
