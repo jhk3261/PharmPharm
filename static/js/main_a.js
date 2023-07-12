@@ -1,6 +1,5 @@
 // 동물/인간 전환 탭
 const themeBtn = document.querySelector('.tapwrap');
-const peopleWrap = document.getElementById('PeopleWrap');
 const animalWrap = document.getElementById('AnimalWrap');
 
 // scroll event
@@ -30,13 +29,13 @@ function initializeScrollReveal(container) {
     sr.reveal(moveBtnWrap, { delay: 500, origin: 'bottom' });
 }
 
-initializeScrollReveal(peopleWrap);
+initializeScrollReveal(animalWrap);
 
 //down버튼 슬라이드
-const DownBtnP = document.querySelector('.PeopleWrap').querySelector('.downBtn');
+const DownBtnA = document.querySelector('.AnimalWrap').querySelector('.downBtn');
 
-DownBtnP.addEventListener("click", ()=>{
-    var location = document.querySelector('.Sc2').offsetTop;
+DownBtnA.addEventListener("click", ()=>{
+    var location = document.querySelector('.AnimalWrap').querySelector('.Sc2').offsetTop;
 
     console.log(location);
     window.scrollTo({top: location, behavior: 'smooth'});
@@ -68,19 +67,49 @@ window.addEventListener("scroll", function(){
     });
 
 //돋보기 클릭 event
-const icon = document.querySelectorAll('.fa-magnifying-glass');
-const search = document.querySelectorAll('.Search');
-const input = document.querySelectorAll('.input');
-icon.forEach(function(item){
-    item.addEventListener("click", ()=>{
-        search.forEach(function(i){
-            i.classList.toggle('active');
-        })
-        icon.forEach(function(i){
-            i.classList.toggle('active');
-        })
-        input.forEach(function(i){
-            i.classList.toggle('active');
-        })
-    })
+const icon = document.querySelector('.fa-magnifying-glass');
+const search = document.querySelector('.Search');
+const input = document.querySelector('.input');
+icon.addEventListener("click", ()=>{
+    search.classList.toggle('active');
+    icon.classList.toggle('active');
+    input.classList.toggle('active');
 })
+
+
+//동물헤더 서브메뉴(약국찾기)
+
+
+
+// const HumanTap = document.getElementById('PeopleWrap');
+// const AnimalTap = document.getElementById('AnimalWrap');
+
+// console.log(HumanTap);
+// themeBtn.addEventListener('click',()=>{
+
+
+//     document.body.classList.toggle("ani-theme");
+//     themeBtn.classList.toggle("people");
+
+//     localStorage.setItem("saved-theme", getCurrentTheme());
+//     localStorage.setItem("saved-icon", getCurrentIcon());
+
+//     document.body.classList.contains("ani-theme")?
+//         AnimalTap.style.display = "block" : HumanTap.style.display = "block";
+
+//     document.body.classList.contains("ani-theme")?
+//         HumanTap.style.display = "none" :AnimalTap.style.display = "none" ;
+
+
+// });
+
+// const getCurrentTheme = () => document.body.classList.contains("ani-theme") ? "ani" : "peo";
+// const getCurrentIcon = () => themeBtn.classList.contains("people") ? "people" : "animal";
+
+// const savedTheme = localStorage.getItem("saved-theme");
+// const savedIcon = localStorage.getItem("saved-icon");
+
+// if(savedTheme) {
+//     document.body.classList[savedTheme === "ani" ? "add" : "remove"]("ani-theme");
+//     themeBtn.classList[savedIcon === "people" ? "add" : "remove"]("people");
+// };
