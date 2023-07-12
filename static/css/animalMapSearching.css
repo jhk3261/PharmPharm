@@ -42,9 +42,11 @@ body {
 button{
     border: 0;
     outline: 0;
+    font-family: 'Pretendard-Regular';
 }
 p{
     margin: 0;
+    font-family: 'Pretendard-Regular';
 }
 
 .animalSearch{
@@ -57,12 +59,12 @@ p{
     position: fixed;
     left:11.6rem;
     width: 30vw;
-    height: 18vh;
     display: inline-block;
     z-index: 10;
 }
 
 .searchQ{
+    font-family: 'Pretendard-SemiBold';
     color: #18A247;
 }
 
@@ -103,9 +105,14 @@ p{
     overflow-y:scroll;
     -ms-overflow-style: none;
 }
-.searchLIst::-webkit-scrollbar{
+.searchList::-webkit-scrollbar {
     display: none;
-}
+  }
+  
+  .searchList {
+    -ms-overflow-style: none; /* 인터넷 익스플로러 */
+    scrollbar-width: none; /* 파이어폭스 */
+  }
 
 /* ===========1번 리스트=========== */
 
@@ -506,4 +513,47 @@ p{
 .pageChangeBtn:hover .human{
     background-color: white;
     color: black;
+}
+
+.ArticleSearch {
+    margin: 0 auto;
+
+    width: 14rem;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 1.8rem;
+    border-bottom: 2px solid #18A247;
+}
+.ArticleSearch input {
+    padding-left: 0.4rem;
+    outline: none;
+    border: none;
+
+    font-size: 0.9rem;
+    font-family: 'Pretendard-Regular';
+    color: black;
+}
+.ArticleSearch input::placeholder {
+    font-size: 0.9rem;
+    font-family: 'Pretendard-Regular';
+    color: #A0A0A0;
+}
+form {
+    display: flex;
+    justify-content: space-between;
+}
+.ArticleSearch button {
+    border:none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.ArticleSearch button img{
+    width: 21px;
+    height: 21px;
+
+    transition: .25s ease-in-out;
 }
