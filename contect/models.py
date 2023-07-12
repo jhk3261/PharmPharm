@@ -6,7 +6,7 @@ class HumanInformation(models.Model):
     human_information = models.ForeignKey(HumanInformation, on_delete=models.CASCADE)
 
 class HumanPharmacy(models.Model):
-     human_pharmacy = models.ForeignKey(HumanPharmacy, on_delete=models.CASCADE)
+      human_pharmacy = models.ForeignKey(HumanDrugInformation, on_delete=models.CASCADE, related_name='human_pharmacies')
     
 class HumanDrugInformation(models.Model):
      human_drug_information = models.ForeignKey(HumanDrugInformation, on_delete=models.CASCADE)
