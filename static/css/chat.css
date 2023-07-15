@@ -1,0 +1,442 @@
+@font-face {
+    font-weight: 300;
+    font-family: 'Pretendard-Light';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+}
+@font-face {
+    font-weight: 400;
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+}
+@font-face {
+    font-weight: 500;
+    font-family: 'Pretendard-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+}
+@font-face {
+    font-weight: 600;
+    font-family: 'Pretendard-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+}
+@font-face {
+    font-weight: 700;
+    font-family: 'Pretendard-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+}
+@font-face {
+    font-weight: 800;
+    font-family: 'Pretendard-ExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+}
+
+*{
+    box-sizing: content-box;
+}
+
+header{
+    width: 1440px;
+    height: 165px;
+}
+
+aside{
+    width: 300px;
+    height: 840px;
+    
+    border-right: 1px solid #dadada;
+}
+main{
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+}
+article{
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    height: 843px;
+}
+.search_txt{
+    font-family: 'Pretendard-Medium';
+    font-size: 16px;
+}
+.Counselor_Container{
+    display: flex;
+    flex-direction: column;
+}
+.Counselor_Nav{
+    display: flex;
+    width: 300px;
+    height: 60.88px;
+    margin-bottom: 5px;
+}
+.Counselor_Nav_Btn{
+    cursor: pointer;
+    background-color: white;
+    width: 150px;
+    height: 60.88px;
+    border: none;
+    font-family: 'Pretendard-SemiBold';
+    font-size: 15px;
+}
+.Counselor_Nav_Btn.active{
+    border-bottom: 2px solid #005aac;
+}
+.Counselor_Nav_Btn_N{
+    position: relative;
+    display: inline-block;
+    width: 22px;
+    height: 18px;
+    border-radius: 5px;
+    background-color: #dadada;
+    justify-content: center;
+    align-items: center;
+}
+.Counselor_Nav_Btn_N:active{
+    background-color: #CBEAFF;
+    color: #005aac;
+}
+.Counselor_List{
+    width: 300px;
+    height: 198.12px;
+    background-color: #CBEAFF;
+    overflow: auto;
+}
+.Counselor_List_Item{
+    margin-left: 25px;
+    margin-top: 15px;
+    font-family: 'Pretendard-Medium';
+    font-size: 13px;
+}
+
+.Booking_Nav{
+    display: flex;
+    width: 300px;
+    height: 60.88px;
+}
+.Booking_Nav_Btn{
+    cursor: pointer;
+    background-color: white;
+    width: 150px;
+    height: 60.88px;
+    border: none;
+    font-family: 'Pretendard-SemiBold';
+    font-size: 15px;
+}
+.Booking_Nav_Btn.active{
+    border-bottom: 2px solid #005aac;
+}
+.Booking_Nav_Btn_N{
+    position: relative;
+    display: inline-block;
+    width: 22px;
+    height: 18px;
+    border-radius: 5px;
+    background-color: #dadada;
+    justify-content: center;
+    align-items: center;
+}
+.Booking_Nav_Btn_N:active{
+    background-color: #CBEAFF;
+    color: #005aac;
+}
+.Booking_List{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 525px;
+    overflow: auto;
+}
+.Booking_Box{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    height: 175px;
+    padding-top: 20px;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+}
+.Booking_Box_menu{
+    margin-right: 30px;
+    padding-left: 20px;
+    color: gray;
+    font-family: 'Pretendard-Medium';
+    font-size: 13px;
+}
+.Booking_Box_item{
+    font-family: 'Pretendard-Medium';
+    font-size: 13px;
+}
+.Modify_Btn_Container{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+.Modify_Btn{
+    width: 40px;
+    height: 30px;
+    padding: 0;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: #005aac;
+    background-color: white;
+    cursor: pointer;
+    font-family: 'Pretendard-SemiBold';
+    font-size: 13px;
+}
+.Chating_Btn{
+    width: 40px;
+    height: 30px;
+    padding: 0;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: #005aac;
+    margin-top: 10px;
+    background-color: #005aac;
+    cursor: pointer;
+    font-family: 'Pretendard-SemiBold';
+    font-size: 13px;
+    color: white;
+}
+
+
+/* article */
+ /* 채팅 화면 */
+.Chating_Window{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px 0 10px;
+    width: 476px;
+    height: 840px;
+    border: 2px solid #dadada;
+}
+.Chating_Tab{
+    position: relative;
+    width: 100px;
+    height: 40px;
+    border: 2px solid #dadada;
+    border-left: none;
+    border-bottom: none;
+    border-top-right-radius: 10px;
+}
+.Chating_Tab_Name{
+    position: absolute;
+    display: flex;
+    width: 70px;
+    padding-left: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Pretendard-Medium';
+    font-size: 17px;  
+}
+.Chating_Tab_Name_Close{
+    margin-left: 15px;
+    color: #aaa;
+    font-family: 'Pretendard-Medium';
+    font-size: 17px;
+}
+.Chating_Status{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 476px;
+    height: 58px;
+    border: 2px solid #dadada;
+    border-left: none;
+    border-bottom: none;
+}
+.Chating_Icon{
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translate(0, -50%);
+    width: 36px;
+    height: 36px;
+}
+.Chating_Status_Content{
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    transform: translate(0, -35%);
+    width: 200px;
+    height: 58px;
+    font-family: 'Pretendard-Medium';
+    font-size: 16px;
+}
+.Chating_Status_Content_S{
+    color: #005aac;
+    font-family: 'Pretendard-SemiBold';
+    font-size: 16px;
+}
+
+#chat-log {
+    width: 476px;
+    height: 546px;
+    border: 2px solid #dadada;
+    border-left: none;
+}
+.Chating_Footer{
+    position: relative;
+    width: 476px;
+    height: 180px;
+}
+.Chating_Message_Input_Container{
+    position: absolute;
+    display: flex;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 115px;
+}
+#chat-message-input{
+    width: 460px;
+    height: 110px;
+    border: 2px solid #dadada;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-right: none;
+}
+#chat-message-submit{
+    border-top: 2px solid #dadada;
+    border-right: 2px solid #dadada;
+    border-bottom: 2px solid #dadada;
+    border-left: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #CBEAFF;
+    width: 60px;
+    height: 110px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Pretendard-SemiBold';
+    font-size: 14px;
+}
+.Chating_Footer_Icons{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 83%;
+    left: 3%;
+    width: 90px;
+}
+.Chating_Footer_Icon{
+    width: 24px;
+    height: 24px;
+}
+#room-leave{
+    position: absolute;
+    top: 90%;
+    left: 84%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 30px;
+    border: 1px solid #005aac;
+    border-radius: 5px;
+    background-color: #005aac;
+    color: white;
+    cursor: pointer;
+    font-family: 'Pretendard-SemiBold';
+    font-size: 14px;
+}
+
+ /* 기본 정보 화면 */
+.Imformation_Window{
+    display: flex;
+    flex-direction: column;
+    width: 296px;
+    height: 840px;
+    border: 2px solid #dadada;
+}
+.Imformation_Logo{
+    position: relative;
+    width: 296px;
+    height: 58px;
+    border-bottom: 2px solid #dadada;
+}
+.Imformation_Logo_Container{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+.Imformation_Logo_Icon{
+    width: 30px;
+    height: 30px;
+}
+.Imformation_Logo_Content{
+    margin-left: 15px;
+    padding-top: 2px;
+    font-family: 'Pretendard-SemiBold';
+    font-size: 20px;
+}
+.Imformation_Basic{
+    position: relative;
+    width: 296px;
+    height: 40px;
+    border-bottom: 2px solid #dadada;
+}
+.Imformation_Basic_Content{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    font-family: 'Pretendard-Medium';
+    font-size: 16px;
+}
+
+form{
+    margin-top: 15px;
+}
+.Modal_Content_Input_Label{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: 'Pretendard-Medium';
+    font-size: 14px;
+    color: gray;
+}
+.Modal_Content_Input_Txt1{
+    background: white;
+    background-image: url(/static/img/text.png);
+    background-position: 98% center;
+    background-size: 16px;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 25px;
+    padding: 0 5px 0 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 10px 0 20px 0;
+    outline: none;
+
+    font-family: 'Pretendard-Medium';
+    font-size: 14px;
+}
+.Modal_Content_Input_Txt2{
+    background: white;
+    width: 250px;
+    height: 400px;
+    padding: 10px 5px 0 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 20px 0 20px 13px;
+    outline: none;
+
+    font-family: 'Pretendard-Medium';
+    font-size: 16px;
+}
+.Modal_Content_Input_Save{
+    width: 125px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 75px;
+    background-color: #005aac;
+    color: white;
+    cursor: pointer;
+
+    font-family: 'Pretendard-Medium';
+    font-size: 16px;
+}

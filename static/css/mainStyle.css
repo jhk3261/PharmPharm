@@ -45,20 +45,16 @@ body {
 }
 
 .PeopleWrap {
-    display:none;
+    display:block;
     height: 100%;
     overflow-x: hidden;
 }
 .AnimalWrap {
-    display:none;
+    display:block;
     height: 100%;
     overflow-x: hidden;
 }
 
-.PeopleWrap.active,
-.AnimalWrap.active {
-    display: block;
-}
 ol, ul,li {
 	list-style: none;
     display: inline-block;

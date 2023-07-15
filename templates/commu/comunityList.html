@@ -1,13 +1,15 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>팜팜</title>
-    <link rel="stylesheet" href="/static/css/List.css">
-    <link rel="stylesheet" href="/static/css/header.css">
-    <script src="/static/js/list.js" defer></script>
-    <script src="/static/js/header.js" defer></script>
+    <link rel="stylesheet" href="{% static 'css/List.css' %}">
+    <link rel="stylesheet" href="{% static 'css/header.css' %}">
+    <script src="{% static 'js/list.js' %}" defer></script>
+    <script src="{% static 'js/header.js' %}" defer></script>
     <script src="https://kit.fontawesome.com/32afc995e9.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -51,33 +53,14 @@
                         </form>
                     </div>
                 </div>
-                <div class="ListWrap">
+                <div class="ListWrap">                    
                     <hr/>
+                    { % for list in Community %}
                     <div class="Content">
-                        <p class="contNum">01</p>
+                        <p class="contNum">{{ forloop.counter }}</p>
                         <div class="contWrap">
-                            <p class="contTitle">명절 떡 주의!  응급처치 하임리히법 알아보기</p>
-                            <p class="contArticle">추석에 송편을 먹다가 기도가 막혀 응급실에 이송되는 사건을 종종 볼 수 있었을텐데요. 특히 추석과 같은 명절에는 온 가족이 모인만큼 오랜만에 웃으며 이야길 나누거나, 과한 음주에서 이러한 돌발 상황이 발생할 확률이 높습니다. 이물질이 기도를 부분적으로 </p>
-                            <div class="contReactWrap">
-                                <div class="React">
-                                    <img src="/static/img/comment.svg">
-                                    <span class="comment">11</span>
-                                    <i class="fa-regular fa-thumbs-up" style="color: #000000;"></i>
-                                    <span class="heart">95</span>
-                                </div>
-                                <p class="Date">
-                                    2023년 3월 3일 00:00 작성
-                                </p>
-                            </div>
-                        </div>
-                        <img class="contImg" src="/static/img/puzzle.jpg" />
-                    </div>
-                    <hr/>
-                    <div class="Content">
-                        <p class="contNum">02</p>
-                        <div class="contWrap">
-                            <p class="contTitle">손가락이 잘렸을 때 ! 응급 대처 방안에 대해서 </p>
-                            <p class="contArticle">손가락 절단 사고 시 절단된 상처 부위를 닦으면 안됩니다 !! 손가락이 절단된 자리의 상처는 씻거나 솜으로 문지르면 조직이 손상될 가능성이 있으므로 하지말아야 합니다. 만약 손가락이 완전 절단이 아닌 불완전 절단이라면 부목으로 고정시킨 후</p>
+                            <p class="contTitle">{{ Community.post }} </p>
+                            <p class="contArticle">{{ Community.post }} </p>
                             <div class="contReactWrap">
                                 <div class="React">
                                     <img src="/static/img/comment.svg">
@@ -92,27 +75,8 @@
                         </div>
                         <img class="contImg" src="/static/img/puzzle.jpg" />
                     </div>
-                    <hr/>
-                    <div class="Content">
-                        <p class="contNum">03</p>
-                        <div class="contWrap">
-                            <p class="contTitle">심장 근처가 아픕니다 이거 괜찮은 거 맞나요? 어디로 가야 할까요? 너무 심각한 거</p>
-                            <p class="contArticle">제목 그대로 심장 근처 부분이 아픕니다. 코로나19 백신을 맞은 뒤로 이상하게 심장 부근이 미세하게 뛰는 느낌도 들고 너무 걱정되어요 작은 병원에 가봤는데 말이 안심이 안돼요ㅜㅜ 큰 병원으로 가야 할 것 같은데 돈이 많이 깨질까요? 걱정되네요</p>
-                            <div class="contReactWrap">
-                                <div class="React">
-                                    <img src="/static/img/comment.svg">
-                                    <span class="comment">17</span>
-                                    <i class="fa-regular fa-thumbs-up" style="color: #000000;"></i>
-                                    <span class="heart">21</span>
-                                </div>
-                                <p class="Date">
-                                    2023년 3월 4일 17:00 작성
-                                </p>
-                            </div>
-                        </div>
-                        <img class="contImg" src="/static/img/puzzle.jpg" />
-                    </div>
-                    <hr/>
+                    <hr/> 
+                    { % endfor %}                   
                 </div>
                 <button type="button" class="writeBtn">글쓰기</button>
                 <div class="PageNum">
@@ -173,66 +137,27 @@
                 </div>
                 <div class="ListWrap">
                     <hr/>
+                    { % for lists in list}
                     <div class="Content">
-                        <p class="contNum">01</p>
+                        <p class="contNum">{{forloop.counter}} </p>
                         <div class="contWrap">
-                            <p class="contTitle">강아지가 초콜릿을 먹으면 안되는 이유! </p>
-                            <p class="contArticle">강아지가 왜 초콜릿을 먹으면 안될까요? 바로 초콜릿 중독이라는 증상이 오기 때문이에요. 카카오 빈으로 만드는 초콜릿에는 메틸잔틴이나 테오브로민 같은 성분들이 들어있습니다.강아지가 초콜릿 먹었을때 대처방법은</p>
+                            <p class="contTitle">모델에제목이없어......</p>
+                            <p class="contArticle">{{ list.post }} </p>
                             <div class="contReactWrap">
                                 <div class="React">
                                     <img src="/static/img/comment.svg">
-                                    <span class="comment">9</span>
+                                    <span class="comment">{{ list.comment | length }} </span>
                                     <i class="fa-regular fa-thumbs-up" style="color: #000000;"></i>
-                                    <span class="heart">31</span>
+                                    <span class="heart">{{ list.like_number }} </span>
                                 </div>
                                 <p class="Date">
-                                    2023년 3월 3일 00:00 작성
+                                    {{ list.recommendation_order }} 작성
                                 </p>
                             </div>
                         </div>
                         <img class="contImg" src="/static/img/puzzle.jpg" />
                     </div>
-                    <hr/>
-                    <div class="Content">
-                        <p class="contNum">02</p>
-                        <div class="contWrap">
-                            <p class="contTitle">고양이가 싫어하는 냄새는 무엇일까?</p>
-                            <p class="contArticle">고양이가 싫어하는 것은 감귤류의 속하는 과일들의 냄새입니다. 감귤류라고 하면 많은 종류들이 떠오르실 텐데, 지금 떠오르는 종류 중에서는 귤, 유자, 레몬, 오렌지, 라임 등의 과일 냄새를 싫어한다고 합니다.</p>
-                            <div class="contReactWrap">
-                                <div class="React">
-                                    <img src="/static/img/comment.svg">
-                                    <span class="comment">5</span>
-                                    <i class="fa-regular fa-thumbs-up" style="color: #000000;"></i>
-                                    <span class="heart">17</span>
-                                </div>
-                                <p class="Date">
-                                    2023년 5월 31일 12:00 작성
-                                </p>
-                            </div>
-                        </div>
-                        <img class="contImg" src="/static/img/puzzle.jpg" />
-                    </div>
-                    <hr/>
-                    <div class="Content">
-                        <p class="contNum">03</p>
-                        <div class="contWrap">
-                            <p class="contTitle">너구리와 라쿤의 차이에 대해 알아보자.</p>
-                            <p class="contArticle">외관상으로는 꼬리길이, 줄무늬, 손가락의 모양, 눈 주위의 검은 부분의 형태 등이 있습니다. 너구리의 꼬리는 라쿤의 꼬리보다 짧고 줄무늬가 있는 라쿤과 다르게 너굴이의 꼬리에는 줄무늬가 없습니다. 또 발바닥의 모양에서 차이점을 둘 수 있습니다.</p>
-                            <div class="contReactWrap">
-                                <div class="React">
-                                    <img src="/static/img/comment.svg">
-                                    <span class="comment">2</span>
-                                    <i class="fa-regular fa-thumbs-up" style="color: #000000;"></i>
-                                    <span class="heart">11</span>
-                                </div>
-                                <p class="Date">
-                                    2023년 3월 4일 17:00 작성
-                                </p>
-                            </div>
-                        </div>
-                        <img class="contImg" src="/static/img/puzzle.jpg" />
-                    </div>
-                    <hr/>
+                    <hr/>                    
                 </div>
                 <button type="button" class="writeBtn">글쓰기</button>
                 <div class="PageNum">

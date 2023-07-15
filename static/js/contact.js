@@ -106,3 +106,29 @@ $('.Modal_Content_Input_Txt2').keyup(function (e) {
         alert('글자수는 300자까지 입력 가능합니다.');
     };
 });
+
+
+
+// // index.html 파일
+// document.querySelector("#room-name-submit").onclick = function (e) {
+//   // 자신의 프로젝트에서 방 번호 입력하는 부분의  
+//   // Input태그 아이디를 room-name-input으로 설정
+//   const roomName = document.querySelector("#room-name-input").value;
+//   // 자신의 프로젝트에서 유저 닉네임 입력하는 부분의 
+//   //  Input태그 id를 nickname-input으로 설정
+//   const userName = document.querySelector("#nickname-input").value;
+//   // 채팅방 입장시 주소창의 경로
+//   window.location.pathname = `/chat/${roomName}/${userName}`;
+// };
+
+// index.html 파일
+document.querySelector("#room-name-submit").onclick = function (e) {
+  // 자신의 프로젝트에서 방 번호 입력하는 부분의  
+  // Input태그 아이디를 room-name-input으로 설정
+  const roomName = document.querySelector(".Booking_Box_item1").value
+  // 자신의 프로젝트에서 유저 닉네임 입력하는 부분의 
+  //  Input태그 id를 nickname-input으로 설정
+  const userName = document.querySelector(".Booking_Box_item2").value;
+  // 채팅방 입장시 주소창의 경로
+  window.location.pathname = `/chat/${roomName}/${userName}`;
+};

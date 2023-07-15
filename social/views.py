@@ -1,6 +1,4 @@
-from django.shortcuts import render, redirect
-from social.forms import JoinForm, LoginForm
-from social.models import HumanInformation
+from django.shortcuts import render
 
 def join(request):
     if request.method == 'POST':
@@ -34,3 +32,4 @@ def login(request):
         form = LoginForm()
     
     return render(request, 'login.html', {'form': form})
+
