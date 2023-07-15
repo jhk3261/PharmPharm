@@ -3,13 +3,13 @@ from social.models import HumanInformation, HumanPharmacy, HumanDrugInformation
 
 class HumanInformation(models.Model):
     # Fields
-    human_information = models.ForeignKey('self', on_delete=models.CASCADE)
+   human_information = models.CharField(max_length=100)
 
 class HumanPharmacy(models.Model):
-    human_pharmacy = models.ForeignKey(HumanPharmacy, on_delete=models.CASCADE, related_name='human_pharmacies')
+    human_pharmacy = models.ForeignKey(HumanDrugInformation, on_delete=models.CASCADE, related_name='mainmap_human_pharmacies')
 
 class HumanDrugInformation(models.Model):
-    human_drug_information = models.ForeignKey(HumanDrugInformation, on_delete=models.CASCADE, related_name='human_drug_information')
+    human_drug_information = models.CharField(max_length=100)
 
 
 class AnimalPharmacy(models.Model):

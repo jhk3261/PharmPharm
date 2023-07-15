@@ -1,12 +1,13 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>채팅</title>
     <script src="https://kit.fontawesome.com/32afc995e9.js" crossorigin="anonymous"></script>
-    <title>PharmPharm</title>
-    <link rel="stylesheet" href="/static/css/contact.css">
-    <script src="/static/js/contact.js" defer></script>
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+    <script src="{% static 'js/contact.js' %}" defer></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -63,7 +64,10 @@
                             전화번호<br><br>
                             예약메모
                         </div>
+
                         <div class="Booking_Box_item">
+                            <div class="Booking_Box_item1">김00</div>
+                            <div class="Booking_Box_item2">이00</div>
                             김00<br><br>
                             2022-10-01 16:30<br><br>
                             이00<br><br>
@@ -72,7 +76,7 @@
                         </div>
                         <div class="Modify_Btn_Container">
                             <button class="Modify_Btn">수정</button>
-                            <button class="Chating_Btn">채팅</button>
+                            <button id="room-name-submit">채팅</button>
                         </div>
                     </div>
 
@@ -93,7 +97,7 @@
                         </div>
                         <div class="Modify_Btn_Container">
                             <button class="Modify_Btn">수정</button>
-                            <button class="Chating_Btn">채팅</button>
+                            <button class="room-name-submit">채팅</button>
                         </div>
                     </div>
 
@@ -114,7 +118,7 @@
                         </div>
                         <div class="Modify_Btn_Container">
                             <button class="Modify_Btn">수정</button>
-                            <button class="Chating_Btn">채팅</button>
+                            <button class="room-name-submit">채팅</button>
                         </div>
                     </div>
                 </div>
@@ -137,7 +141,7 @@
                         </span>
                         <div class="search">
                             <input class="search_txt" type="text" placeholder="검색어를 입력하세요.">
-                            <img class="search_img" src="/static/img/serch.png">
+                            <img class="search_img" src="{% static 'img/serch.png' %}">
                         </div>
                     </div>
                 </div>
@@ -145,7 +149,7 @@
                     <section>
                         <div class="Section_Box">
                             <div class="porfil_img_Container">
-                                <img class="porfil_img" src="/static/img/profil.png">
+                                <img class="porfil_img" src="{% static 'img/profil.png' %}">
                             </div>
                             <div class="Section_Box_Container">
                                 <div class="Section_Box_Item">
@@ -159,7 +163,7 @@
                             </div>
                             <div class="Section_Box_Icon_Container">
                                 <div class="Section_Box_Bookmark">
-                                    <img class="Section_Box_Bookmark_Icon" src="/static/img/bookmark.png">
+                                    <img class="Section_Box_Bookmark_Icon" src="{% static 'img/bookmark.png' %}">
                                 </div>
                                 <div class="Section_Box_Icon_Btn">
                                     <button class="Booking_Icon">약사지정 상담예약</button>
@@ -199,7 +203,7 @@
                     <section>
                         <div class="Section_Box">
                             <div class="porfil_img_Container">
-                                <img class="porfil_img" src="/static/img/profil.png">
+                                <img class="porfil_img" src="{% static 'img/profil.png' %}">
                             </div>
                             <div class="Section_Box_Container">
                                 <div class="Section_Box_Item">
@@ -213,7 +217,7 @@
                             </div>
                             <div class="Section_Box_Icon_Container">
                                 <div class="Section_Box_Bookmark">
-                                    <img class="Section_Box_Bookmark_Icon" src="/static/img/bookmark_notfill.png">
+                                    <img class="Section_Box_Bookmark_Icon" src="{% static 'img/bookmark_notfill.png' %}">
                                 </div>
                                 <div class="Section_Box_Icon_Btn">
                                     <button class="Booking_Icon">약사지정 상담예약</button>
@@ -253,7 +257,7 @@
                     <section>
                         <div class="Section_Box">
                             <div class="porfil_img_Container">
-                                <img class="porfil_img" src="/static/img/profil.png">
+                                <img class="porfil_img" src="{% static 'img/profil.png' %}">
                             </div>
                             <div class="Section_Box_Container">
                                 <div class="Section_Box_Item">
@@ -267,7 +271,7 @@
                             </div>
                             <div class="Section_Box_Icon_Container">
                                 <div class="Section_Box_Bookmark">
-                                    <img class="Section_Box_Bookmark_Icon" src="/static/img/bookmark_notfill.png">
+                                    <img class="Section_Box_Bookmark_Icon" src="{% static 'img/bookmark_notfill.png' %}">
                                 </div>
                                 <div class="Section_Box_Icon_Btn">
                                     <button class="Booking_Icon">약사지정 상담예약</button>
@@ -307,7 +311,7 @@
                     <section>
                         <div class="Section_Box">
                             <div class="porfil_img_Container">
-                                <img class="porfil_img" src="/static/img/profil.png">
+                                <img class="porfil_img" src="{% static 'img/profil.png' %}">
                             </div>
                             <div class="Section_Box_Container">
                                 <div class="Section_Box_Item">
@@ -321,7 +325,7 @@
                             </div>
                             <div class="Section_Box_Icon_Container">
                                 <div class="Section_Box_Bookmark">
-                                    <img class="Section_Box_Bookmark_Icon" src="/static/img/bookmark_notfill.png">
+                                    <img class="Section_Box_Bookmark_Icon" src="{% static 'img/bookmark_notfill.png' %}">
                                 </div>
                                 <div class="Section_Box_Icon_Btn">
                                     <button class="Booking_Icon">약사지정 상담예약</button>
@@ -364,9 +368,18 @@
         </article>
     </main>
 
+    <h1>채팅하기</h1>
+
+    <h5>닉네임을 입력하세요</h5>
+    <input id="nickname-input" class="mb-2" type="text" size="100" /><br />
+
+    <h5>방 번호를 입력하세요</h5>
+    <input id="room-name-input" class="mb-2" type="text" size="100" t /><br />
+
+    <input id="room-name-submit" type="button" value="Enter" />
+
     <footer>
-
+        
     </footer>
-
 </body>
 </html>
