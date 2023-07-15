@@ -3,43 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Document</title>
     <link rel="stylesheet" href="/static/css/login.css">
     <script src="https://kit.fontawesome.com/32afc995e9.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <section class="login-form">
-        <h1><img src="/static/img/logo.png" width="150px"></h1>
-        <form method="POST">
-            {% csrf_token %}
-            {{ form.as_p }}
-            <div class="btn-area">
-                <button type="submit">LOGIN</button>
+    <body>
+        <section class="login-form">
+            <h1><img src="/static/img/logo.png" width="150px"></h1>
+            <form action="">
+                <div class="int-area">
+                    <input type="text" name="id" id="id" autocomplete="off" required>
+                    <label for="id">USER NAME</label>
+                </div>
+                <div class="int-area">
+                    <input type="password" name="pw" id="pw" autocomplete="off" required>
+                    <label for="pw">PASSWORD</label>
+                </div>
+                <div class="btn-area">
+                    <button id="btn" type="submit">LOGIN</button>
+                </div>
+            </form>
+            <div class="caption">
+                <a href="./join.html">회원가입</a>
             </div>
-        </form>
-        <div class="caption">
-            <a href="{% url 'join' %}">회원가입</a>
-        </div>
-    </section>
+        </section>
+    
+        <script>       
+            let id = $('#id');
+            let pw = $('#pw');
+            let btn = $('#btn');
+            
+            $(btn).on('click', function() {
+                if($(id).val() == "") {
+                    $(id).next('label').addClass('warning');
+                    setTimeout(function() {
+                        $('label').removeClass('warning');
+                    }, 1500);
+                }
+                else if($(pw).val() == "") {
+                    $(pw).next('label').addClass('warning');
+                    setTimeout(function() {
+                        $('label').removeClass('warning');
+                    }, 1500);
+                }
+            });
+        </script>           
+    </body>
+    </html>
 
-    <script>
-        let id = document.getElementById('id');
-        let pw = document.getElementById('pw');
-        let btn = document.getElementById('btn');
-
-        btn.addEventListener('click', function() {
-            if (id.value === "") {
-                id.nextElementSibling.classList.add('warning');
-                setTimeout(function() {
-                    id.nextElementSibling.classList.remove('warning');
-                }, 1500);
-            } else if (pw.value === "") {
-                pw.nextElementSibling.classList.add('warning');
-                setTimeout(function() {
-                    pw.nextElementSibling.classList.remove('warning');
-                }, 1500);
-            }
-        });
-    </script>
 </body>
 </html>
+

@@ -21,7 +21,8 @@ def join(request):
     else:
         form = JoinForm()
     
-    return render(request, 'social/join.html', {'form': form})
+    return render(request, '/templates/social/login.html', {'form': form})
+
 def login(request):
     if request.method == 'POST':
         form = LoginForm(request.POST)
