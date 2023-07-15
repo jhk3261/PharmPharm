@@ -463,7 +463,7 @@ p{
 
 /* =========map=========== */
 
-.mapBox{
+.map{
     border: 2px solid #18A247;
     background-color: none;
     border-left: none;
@@ -472,7 +472,7 @@ p{
     top: 10vw;
     width: 49vw;
     height: 37.5rem;
-    z-index: -11;
+    /* z-index: -11; */
 }
 
 /* ===========HA======== */
