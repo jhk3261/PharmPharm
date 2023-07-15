@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -37,10 +38,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'commu.apps.CommuConfig',
-    'contect.apps.ContectConfig',
-    'mainMap.apps.MainmapConfig',
-    'social.apps.SocialConfig',
+    'commu',
+    'contect',
+    'mainMap',
+    'social',
+    # 채팅 관련 
+    'channels',
+    'chat',
 ]
 
 MIDDLEWARE = [
@@ -54,12 +58,11 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'config.urls'
-import os
-SETTINGS_PATH = os.path.dirname(os.path.dirname(__file__))
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -122,7 +125,27 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Channels 관련 ASGI 설정
+# 배포 시 127.0.0.1 배포 주소 변경 필요
+ASGI_APPLICATION = "config.asgi.application"
+
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "channels_redis.core.RedisChannelLayer",
+        "CONFIG": {
+            "hosts": [("127.0.0.1", 6379)],
+        },
+    },
+}
+
+MEDIA_URL = 'media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

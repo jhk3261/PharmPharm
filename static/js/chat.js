@@ -108,27 +108,62 @@ $('.Modal_Content_Input_Txt2').keyup(function (e) {
 });
 
 
+//  room.html 관련
 
-// // index.html 파일
-// document.querySelector("#room-name-submit").onclick = function (e) {
-//   // 자신의 프로젝트에서 방 번호 입력하는 부분의  
-//   // Input태그 아이디를 room-name-input으로 설정
-//   const roomName = document.querySelector("#room-name-input").value;
-//   // 자신의 프로젝트에서 유저 닉네임 입력하는 부분의 
-//   //  Input태그 id를 nickname-input으로 설정
-//   const userName = document.querySelector("#nickname-input").value;
-//   // 채팅방 입장시 주소창의 경로
-//   window.location.pathname = `/chat/${roomName}/${userName}`;
-// };
+// 방 이름 입력
+const roomName = "{{room_name}}";
+// 웹소켓 요청 주소
+const chatSocket = new WebSocket(
+    `ws://${window.location.host}/ws/chat/${roomName}/`
+);
 
-// index.html 파일
-document.querySelector("#room-name-submit").onclick = function (e) {
-  // 자신의 프로젝트에서 방 번호 입력하는 부분의  
-  // Input태그 아이디를 room-name-input으로 설정
-  const roomName = document.querySelector(".Booking_Box_item1").value
-  // 자신의 프로젝트에서 유저 닉네임 입력하는 부분의 
-  //  Input태그 id를 nickname-input으로 설정
-  const userName = document.querySelector(".Booking_Box_item2").value;
-  // 채팅방 입장시 주소창의 경로
-  window.location.pathname = `/chat/${roomName}/${userName}`;
+// - 서버로부터 메세지를 수신했을 때 실행되는 이벤트 핸들러 -
+chatSocket.onmessage = function (e) {
+    // 서버로부터 데이터 수신
+    const data = JSON.parse(e.data);
+    // 받은 데이터를 화면에 추가
+    document.querySelector(
+        "#chat-log"
+    ).innerHTML += `<div>${data.user} : ${data.message}</div>`;
+};
+
+// - 웹소켓 연결이 끊겼을 때 발생하는 핸들러 -
+chatSocket.onclose = function (e) {
+    console.error("Chat socket closed unexpectedly");
+};
+
+// - 엔터 눌렀을 때 자동으로 메세지가 보내지게 하기 위해 설정 -
+document.querySelector("#chat-message-input").focus();
+document.querySelector("#chat-message-input").onkeyup = function (e) {
+    if(e.keyCode === 13) {
+        // enter, return
+        document.querySelector("#chat-message-submit").click();
+    }
+};
+
+// - 전송버튼을 눌러 메세지를 보낼 때 발생하는 이벤트 핸들러 -
+document.querySelector("#chat-message-submit").onclick = function (e) {
+    // Input 필드의 value를 가져온다.
+    const messageInputDom = document.querySelector("#chat-message-input");
+    const message = messageInputDom.value;
+
+    //  빈 메세지일 때는 메세지를 보내지 않는다.
+    if(message === "") return;
+
+    // 빈 메세지가 아닐 때는 서버에 해당 내용을 전송
+    chatSocket.send(
+        JSON.stringify({
+            message: message,
+            user: "{{user}}",
+        })
+    );
+    
+    // 인풋값 초기화
+    messageInputDom.value = "";
+};
+
+// - 채팅방 나가기를 클릭했을 때 호출되는 이벤트 핸들러 -
+document.querySelector("#room-leave").onclick = function(e){
+    chatSocket.close();
+    window.location.pathname = `/chat`;
 };

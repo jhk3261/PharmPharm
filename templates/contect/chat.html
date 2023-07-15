@@ -1,0 +1,204 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmPharm</title>
+    <script src="https://kit.fontawesome.com/32afc995e9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/chat.css' %}">
+    <script src="{% static 'js/chat.js' %}" defer></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- 1440x165 -->
+    <header>
+        <nav>
+            
+        </nav>
+    </header>
+
+    <main>
+        <!-- 300x840 -->
+        <aside>
+            <div class="Counselor_Container">
+                <div class="Counselor_Nav">
+                    <Button class="Counselor_Nav_Btn">
+                        상담중인 약사 
+                        <span class="Counselor_Nav_Btn_N">5</span>
+                    </Button>
+                    <Button class="Counselor_Nav_Btn">
+                        전체 약사 
+                        <span class="Counselor_Nav_Btn_N">7</span>
+                    </Button>
+                </div>
+                <div class="Counselor_List">
+                    <div class="Counselor_List_Item">
+                    김00(대기)<br><br>
+                    나00(대기)<br><br>
+                    박00(대기)<br><br>
+                    이00(대기)<br><br>
+                    김00(대기)<br><br>
+                    나00(대기)
+                    </div>
+                </div>
+            </div>
+            <div class="Booking_Container">
+                <div class="Booking_Nav">
+                    <Button class="Booking_Nav_Btn">
+                        예약현황 
+                        <span class="Booking_Nav_Btn_N">5</span>
+                    </Button>
+                    <Button class="Booking_Nav_Btn">
+                        상담현황
+                        <span class="Booking_Nav_Btn_N">2</span>
+                    </Button>
+                </div>
+                <div class="Booking_List">
+                    <div class="Booking_Box">
+                        <div class="Booking_Box_menu">
+                            약사<br><br>
+                            예약일시<br><br>
+                            이름<br><br>
+                            전화번호<br><br>
+                            예약메모
+                        </div>
+                        <div class="Booking_Box_item">
+                            김00<br><br>
+                            2022-10-01 16:30<br><br>
+                            이00<br><br>
+                            010-1234-5678<br><br>
+                            소화불량 관련 문의
+                        </div>
+                        <div class="Modify_Btn_Container">
+                            <button class="Modify_Btn">수정</button>
+                            <button class="Chating_Btn">채팅</button>
+                        </div>
+                    </div>
+
+                    <div class="Booking_Box">
+                        <div class="Booking_Box_menu">
+                            약사<br><br>
+                            예약일시<br><br>
+                            이름<br><br>
+                            전화번호<br><br>
+                            예약메모
+                        </div>
+                        <div class="Booking_Box_item">
+                            나00<br><br>
+                            2022-10-01 16:30<br><br>
+                            황00<br><br>
+                            010-1234-5678<br><br>
+                            숙취 관련 약 문의
+                        </div>
+                        <div class="Modify_Btn_Container">
+                            <button class="Modify_Btn">수정</button>
+                            <button class="Chating_Btn">채팅</button>
+                        </div>
+                    </div>
+
+                    <div class="Booking_Box">
+                        <div class="Booking_Box_menu">
+                            약사<br><br>
+                            예약일시<br><br>
+                            이름<br><br>
+                            전화번호<br><br>
+                            예약메모
+                        </div>
+                        <div class="Booking_Box_item">
+                            박00<br><br>
+                            2021-10-01 16:30<br><br>
+                            심00<br><br>
+                            010-1234-5678<br><br>
+                            눈 주변 가려움 관련
+                        </div>
+                        <div class="Modify_Btn_Container">
+                            <button class="Modify_Btn">수정</button>
+                            <button class="Chating_Btn">채팅</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- 918x843 -->
+        <article>
+            <div class="Chating_Window">
+                <div class="Chating_Tab">
+                    <!-- {% for message in messages %}
+                        <div class="Chating_Tab_Name">
+                            {{message.user}}
+                            <span class="Chating_Tab_Name_Close">&times;</span>
+                        </div>
+                    {% endfor %} -->
+                    <div class="Chating_Tab_Name">
+                        서현호
+                        <span class="Chating_Tab_Name_Close">&times;</span>
+                    </div> 
+                </div>
+                <div class="Chating_Status">
+                    <img class="Chating_Icon" src="{% static 'img/chating_icon.png' %}">
+                    <div class="Chating_Status_Content">
+                        서현호(010-1212-1212) <br>
+                        <div class="Chating_Status_Content_S">상담중</div>
+                    </div>
+                </div>
+                <!-- 채팅 기록 나오는 부분 -->
+                <div id="chat-log" cols="100">
+                    {% for message in messages %}
+                        <div>{{message.user}} : {{message.content}}</div>
+                    {% endfor %}
+                </div>
+
+                <!-- 메세지 입력 -->
+                <div class="Chating_Footer">
+                    <div class="Chating_Message_Input_Container">
+                        <!-- 대화 내용 작성 -->
+                        <input id="chat-message-input" type="text">
+                        <!-- 대화내용 전송 버튼 -->
+                        <input id="chat-message-submit" type="button" value="보내기" />
+                    </div>
+                    <div class="Chating_Footer_Icons">
+                        <img class="Chating_Footer_Icon" src="{ static 'img/picture.png' %}">
+                        <img class="Chating_Footer_Icon" src="{ static 'img/smile.png' %}">
+                        <img class="Chating_Footer_Icon" src="{ static 'img/phone.png' %}">
+                    </div>
+                    <!-- 채팅방 종료 버튼 -->
+                    <input id="room-leave" type="button" value="상담 종료" />
+                </div>
+            </div>
+
+            <div class="Imformation_Window">
+                <div class="Imformation_Logo">
+                    <div class="Imformation_Logo_Container">
+                        <img class="Imformation_Logo_Icon" src="{% static 'img/chating_icon.png' %}">
+                        <div class="Imformation_Logo_Content">
+                            고객정보
+                        </div>
+                    </div>
+                </div>
+                <div class="Imformation_Basic">
+                    <div class="Imformation_Basic_Content">
+                        기본정보 및 메모
+                    </div>
+                </div>
+                <form>
+                    <span class="Modal_Content_Input_Label">이름 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <input class="Modal_Content_Input_Txt1" type="text" placeholder="고객명을 입력하세요."><br>
+                    <span class="Modal_Content_Input_Label">전화번호</span>
+                    <input class="Modal_Content_Input_Txt1" type="text" placeholder="연락처를 입력해주세요"><br>
+                    <span class="Modal_Content_Input_Label">메모</span>
+                    <textarea class="Modal_Content_Input_Txt2" maxlength="500" resize:none;></textarea>
+                    <input class="Modal_Content_Input_Save" type="button" value="저장" />
+                </form>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>

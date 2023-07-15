@@ -186,7 +186,7 @@ section{
     font-family: 'Pretendard-SemiBold';
     font-size: 13px;
 }
-#room-name-submit{
+.Chating_Btn{
     width: 40px;
     height: 30px;
     padding: 0;
