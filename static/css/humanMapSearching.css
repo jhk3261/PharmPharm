@@ -504,7 +504,7 @@ p {
 
 /* =========map=========== */
 
-.mapBox{
+.map{
     border: 2px solid #005AAC;
     border-left: none;
     background-color: none;
@@ -513,7 +513,7 @@ p {
     top: 10vw;
     width: 49vw;
     height: 37.5rem;
-    z-index: -11;
+    /* z-index: -11; */
 }
 
 /* ===========HA======== */

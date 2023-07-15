@@ -26,7 +26,7 @@
                     </div>
                     <p class='MainText' id="MainText">가장 <span>가까운 약국</span>을 찾아드립니다</p>
                     <div class="PointEnter" id="PointEnter">
-                        <form>
+                        <form action="{% url 'map' %}" method="get">
                             <input type="text" id="user-current-point" placeholder="현재 위치를 입력해주세요"/> 
                             <button type="submit"><img src="/static/img/turndownarrow.svg"></button>
                         </form>
